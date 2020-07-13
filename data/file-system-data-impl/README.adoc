@@ -1,0 +1,3 @@
+= bndly common data file-system-data-impl
+
+Contains an implementation of the bndly common data api to create data objects out of files being put into a watched Folder.

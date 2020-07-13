@@ -1,0 +1,3 @@
+= bndly common reflection
+
+Bundle contains Classes to ease the use of reflections.

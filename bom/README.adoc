@@ -1,0 +1,5 @@
+= bndly common BOM
+
+Bill Of Material contains a pom with all bundles of bndly for dependency management.
+
+Third party dependencies are found in bndly common 3rd-party-bom.

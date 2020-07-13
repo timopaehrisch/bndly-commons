@@ -1,0 +1,3 @@
+= bndly common rest annotation-api
+
+The bundle provides the API for annotation-based REST interface

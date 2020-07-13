@@ -1,0 +1,3 @@
+= bndly common rest security
+
+The bundle provides a Interceptor which uses AuthorizationProvider to control access to rest services.

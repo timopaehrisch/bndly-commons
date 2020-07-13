@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.bndly.common</groupId>
+		<artifactId>org.bndly.common.applications</artifactId>
+		<version>${revision}${changelist}</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+
+	<groupId>org.bndly.common.rest</groupId>
+	<artifactId>org.bndly.common.rest.rest</artifactId>
+	<packaging>pom</packaging>
+	<name>Bndly commons REST Parent</name>
+
+	<modules>
+		<module>annotation-api</module>
+		<module>annotation-impl</module>
+		<module>annotations</module>
+		<module>beans</module>
+<!--
+		<module>cache</module>
+		<module>cache-resource</module>
+		<module>cache-resource-beans</module>
+		<module>cache-websocket</module>
+		<module>query-resource</module>
+		<module>query-resource-beans</module>
+		<module>websocket-api</module>
+		<module>websocket-client</module>
+		<module>websocket-server</module>
+		<module>resources</module>
+-->
+		<module>api-descriptor</module>
+<!--
+		<module>pdf-provider</module>
+		<module>pdf-resource</module>
+-->
+		<module>link-injector</module>
+		<module>cycle-breaker</module>
+		<module>response-postprocessor</module>
+		<module>jaxb-resource-renderer</module>
+<!--
+		<module>data-cache-invalidation</module>
+		<module>jsonp-provider</module>
+		<module>global-jaxbcontext-provider</module>
+		<module>mail-resource</module>
+		<module>mail-resource-beans</module>
+		<module>bpm-resource-beans</module>
+		<module>bpm-resource</module>
+-->
+		<module>data-resource-beans</module>
+		<module>data-resource</module>
+<!--
+		<module>schema-resource-beans</module>
+		<module>schema-resource</module>
+		<module>search-resource-beans</module>
+		<module>search-resource</module>
+		<module>repository-resource</module>
+		<module>schema-websocket</module>
+		<module>schema-cache-invalidation</module>
+		<module>client</module>
+		<module>entity-resource</module>
+-->
+		<module>api</module>
+<!--
+		<module>jetty-bridge</module>
+		<module>jetty-bundle-locator</module>
+-->
+		<module>servlet-base</module>
+<!-->
+		<module>servlet-impl</module>
+		<module>form-mapper</module>
+-->
+		<module>security</module>
+<!--
+		<module>security-resource</module>
+		<module>security-resource-beans</module>
+		<module>swagger-integration</module>
+-->
+	</modules>
+
+</project>

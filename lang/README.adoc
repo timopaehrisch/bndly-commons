@@ -1,0 +1,3 @@
+= bndly common lang
+
+Bundle contains helper classes

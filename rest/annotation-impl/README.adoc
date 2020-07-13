@@ -1,0 +1,3 @@
+= bndly common rest annotation-impl
+
+The Bundle implements the annotation-api providing rest controller.

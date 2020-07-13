@@ -1,0 +1,3 @@
+= bndly common rest cycle-breaker
+
+The CycleBreakingBeanGraphListener removes cycles in REST responses replacing objects with a reference if they occur for the second time.

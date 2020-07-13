@@ -1,0 +1,3 @@
+= bndly common rest beans
+
+The bundle provides base classes for rest beans

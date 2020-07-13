@@ -1,0 +1,3 @@
+= bndly common rest data-resource-beans
+
+Bundle contains the POJOs with JAXB annotations to be used with bndly common data-resource

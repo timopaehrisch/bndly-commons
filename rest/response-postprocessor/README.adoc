@@ -1,0 +1,3 @@
+= bndly common rest response-postprocessor
+
+The bundle provides the response postprocessor as Interceptor in the REST processing chanin.

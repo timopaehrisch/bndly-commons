@@ -1,0 +1,3 @@
+= bndly common 3rd Party BOM
+
+Bill Of Material contains a pom with all dependencies and their versions for dependency management.

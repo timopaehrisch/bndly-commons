@@ -1,0 +1,3 @@
+= bndly common rest annotations
+
+Bundle provides annotations for AtomLinks to realize HATEOAS for the rest api.

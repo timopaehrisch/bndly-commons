@@ -1,0 +1,3 @@
+= bndly common osgi Utilities
+
+This bundle contains Helper classes to deal with Dictionaries and Services.

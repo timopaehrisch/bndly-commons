@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.bndly.common.crypto</groupId>
+		<artifactId>org.bndly.common.crypto.crypto</artifactId>
+		<version>${revision}${changelist}</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+
+	<artifactId>org.bndly.common.crypto.crypto-impl</artifactId>
+	<packaging>bundle</packaging>
+	<name>Bndly commons Crypto Impl</name>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.bndly.common</groupId>
+			<artifactId>org.bndly.common.osgi</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.bndly.common.crypto</groupId>
+			<artifactId>org.bndly.common.crypto.crypto-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.bndly.common.data</groupId>
+			<artifactId>org.bndly.common.data.io</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>osgi.cmpn</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>org.osgi.core</artifactId>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<configuration>
+					<instructions>
+						<Bundle-Category>crypto</Bundle-Category>
+						<Export-Package>org.bndly.common.crypto.impl.shared</Export-Package>
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

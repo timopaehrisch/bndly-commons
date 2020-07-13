@@ -1,0 +1,3 @@
+= bndly common rest
+
+Contains bundles to implement a rest interface for Apache Felix / Sling

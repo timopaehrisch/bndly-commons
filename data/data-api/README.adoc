@@ -1,0 +1,12 @@
+= bndly common data api
+
+This bundle contains Classes to deal with data.
+
+The central interface is Data.class which holds the data and conatins information about content type, creation and name of the data object.
+Data can be accessed via a ReplayableInputStream.
+
+Data objects can be created by putting files into a watched Folder.
+The bundle also contains the api for a configurable Folderwatcher (~Factory for multiple Folders).
+Consuming services can register a FolderWatcherListener to get informed when a new Data object is available.
+
+Implementation for a standard file system are located in bndly common data file-system-data-impl.

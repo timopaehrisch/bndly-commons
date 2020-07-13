@@ -1,0 +1,4 @@
+= bndly common rest link-injector
+
+The Bundle provides the services in form of interceptors to weave HATEOAS links into a rest response.
+The links are defined with AtomLink annotations.

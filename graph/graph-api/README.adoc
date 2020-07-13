@@ -1,0 +1,4 @@
+= bndly common graph-api
+
+The graph api is used for object-graphs in order to remove cycles and avoid objects to occure multiple times in REST responses.
+Objects are replaced with a reference instead if the occure more than one time in the object graph.

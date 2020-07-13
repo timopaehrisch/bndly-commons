@@ -1,0 +1,9 @@
+= bndly common data io
+
+The bundle conatins helper classes to deal with data.
+
+*ReplayableInputStream* - an InputStream that can be read multiple times.
+
+*SmartBufferOutputStream* - an OutputStream that can be read while being written.
+
+*TeeOutputStream* - an OutputStream that writes to two other OutputStreams.

@@ -1,0 +1,3 @@
+= bndly common rest api
+
+Bundle contains interfaces for the different concepts used in the rest-interface bundles

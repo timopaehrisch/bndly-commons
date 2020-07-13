@@ -1,0 +1,5 @@
+= bndly common rest servlet-base
+
+This bundle provides ResourceDelegatingServletBase with the main entry method service() which is called from a concrete servlet-implementation.
+
+The separation of this servlet-base from a concrete servlet is done in order to allow for different methods of servlet-registration in Apache Felix and Apache Sling.

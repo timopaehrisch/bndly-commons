@@ -1,0 +1,3 @@
+= bndly common rest api-descriptor
+
+Bundle provides the classes to handle AtomLinks and method parameter-injection

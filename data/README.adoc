@@ -1,0 +1,3 @@
+= bndly common data
+
+Bundles which handle data objects from files.

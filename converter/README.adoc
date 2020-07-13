@@ -1,0 +1,3 @@
+= bndly common converter
+
+Bundle contains converter between data types.

@@ -1,0 +1,3 @@
+= bndly common rest jaxb-resource-renderer
+
+This bundle provides a renderer used in combination with the DelegatingResourceRenderer to marshal JAXB objects.
