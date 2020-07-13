@@ -22,20 +22,20 @@
     </license>
   </licenses>
 
-  <DistributionManagement>
-    <Repository>
-      <Id>packagecloud-travis</Id>
-      <Url>
+  <distributionManagement>
+    <repository>
+      <id>packagecloud-travis</id>
+      <url>
         packagecloud+https://packagecloud.io/bndly/bndly-commons
-      </Url>
-    </Repository>
-    <SnapshotRepository>
-      <Id>packagecloud-travis</Id>
-      <Url>
+      </url>
+    </repository>
+    <snapshotRepository>
+      <id>packagecloud-travis</id>
+      <url>
         packagecloud+https://packagecloud.io/bndly/bndly-commons
-      </Url>
-    </SnapshotRepository>
-  </DistributionManagement>
+      </url>
+    </snapshotRepository>
+  </distributionManagement>
 
   <modules>
     <module>3rd-party-bom</module>
