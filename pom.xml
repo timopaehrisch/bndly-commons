@@ -22,21 +22,6 @@
     </license>
   </licenses>
 
-  <distributionManagement>
-    <repository>
-      <id>packagecloud-travis</id>
-      <url>
-        packagecloud+https://packagecloud.io/bndly/bndly-commons
-      </url>
-    </repository>
-    <snapshotRepository>
-      <id>packagecloud-travis</id>
-      <url>
-        packagecloud+https://packagecloud.io/bndly/bndly-commons
-      </url>
-    </snapshotRepository>
-  </distributionManagement>
-
   <modules>
     <module>3rd-party-bom</module>
     <module>bom</module>
@@ -55,6 +40,19 @@
     <tag>v5.0.0</tag>
     <url>https://github.com/bndly/bndly-commons.git</url>
   </scm>
+
+  <distributionManagement>
+    <repository>
+      <id>packagecloud-bndly</id>
+      <url>packagecloud+https://packagecloud.io/bndly/bndly-commons</url>
+      <layout>default</layout>
+    </repository>
+    <snapshotRepository>
+      <id>packagecloud-bndly</id>
+      <url>packagecloud+https://packagecloud.io/bndly/bndly-commons</url>
+      <layout>default</layout>
+    </snapshotRepository>
+  </distributionManagement>
 
   <properties>
     <checkstyle.config.location>bndly_checks.xml</checkstyle.config.location>
@@ -102,6 +100,13 @@
   </dependencyManagement>
 
   <build>
+    <extensions>
+      <extension>
+        <groupId>io.packagecloud.maven.wagon</groupId>
+        <artifactId>maven-packagecloud-wagon</artifactId>
+        <version>0.0.6</version>
+      </extension>
+    </extensions>
     <pluginManagement>
       <plugins>
 
@@ -379,13 +384,6 @@
         </configuration>
       </plugin>
     </plugins>
-    <extensions>
-      <extension>
-        <groupId>io.packagecloud.maven.wagon</groupId>
-        <artifactId>maven-packagecloud-wagon</artifactId>
-        <version>0.0.4</version>
-      </extension>
-    </extensions>
   </build>
 
   <reporting>

@@ -14,6 +14,19 @@
 		<tag>v5.0.0</tag>
 	</scm>
 
+	<distributionManagement>
+		<repository>
+			<id>packagecloud-bndly</id>
+			<url>packagecloud+https://packagecloud.io/bndly/bndly-commons</url>
+			<layout>default</layout>
+		</repository>
+		<snapshotRepository>
+			<id>packagecloud-bndly</id>
+			<url>packagecloud+https://packagecloud.io/bndly/bndly-commons</url>
+			<layout>default</layout>
+		</snapshotRepository>
+	</distributionManagement>
+
 	<reporting>
 		<plugins>
 			<plugin>
@@ -612,6 +625,7 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+
 	<build>
 		<plugins>
 			<plugin>
@@ -640,6 +654,13 @@
 				</executions>
 			</plugin>
 		</plugins>
+		<extensions>
+			<extension>
+				<groupId>io.packagecloud.maven.wagon</groupId>
+				<artifactId>maven-packagecloud-wagon</artifactId>
+				<version>0.0.6</version>
+			</extension>
+		</extensions>
 		<pluginManagement>
 			<plugins>
 				<plugin>

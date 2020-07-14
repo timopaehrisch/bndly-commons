@@ -13,6 +13,19 @@
   <packaging>bundle</packaging>
   <name>Bndly commons REST Response Postprocessor</name>
 
+  <distributionManagement>
+    <repository>
+      <id>packagecloud-bndly</id>
+      <url>packagecloud+https://packagecloud.io/bndly/bndly-commons</url>
+      <layout>default</layout>
+    </repository>
+    <snapshotRepository>
+      <id>packagecloud-bndly</id>
+      <url>packagecloud+https://packagecloud.io/bndly/bndly-commons</url>
+      <layout>default</layout>
+    </snapshotRepository>
+  </distributionManagement>
+
   <dependencies>
     <dependency>
       <groupId>javax.xml.bind</groupId>
@@ -59,6 +72,13 @@
   </dependencies>
 
   <build>
+    <extensions>
+      <extension>
+        <groupId>io.packagecloud.maven.wagon</groupId>
+        <artifactId>maven-packagecloud-wagon</artifactId>
+        <version>0.0.6</version>
+      </extension>
+    </extensions>
     <plugins>
       <plugin>
         <groupId>org.apache.felix</groupId>
