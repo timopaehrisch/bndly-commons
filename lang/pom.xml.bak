@@ -21,16 +21,14 @@ under the conditions ~ of the licence contract with cyber:con GmbH. -->
   <packaging>bundle</packaging>
   <name>Bndly commons Lang</name>
 
-  <distributionManagement>
+    <distributionManagement>
     <repository>
-      <id>packagecloud-bndly</id>
-      <url>packagecloud+https://packagecloud.io/bndly/bndly-commons</url>
-      <layout>default</layout>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
     </repository>
     <snapshotRepository>
-      <id>packagecloud-bndly</id>
-      <url>packagecloud+https://packagecloud.io/bndly/bndly-commons</url>
-      <layout>default</layout>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
     </snapshotRepository>
   </distributionManagement>
 
@@ -47,12 +45,6 @@ under the conditions ~ of the licence contract with cyber:con GmbH. -->
   </dependencies>
 
   <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.felix</groupId>
-        <artifactId>maven-bundle-plugin</artifactId>
-      </plugin>
-    </plugins>
     <extensions>
       <extension>
         <groupId>io.packagecloud.maven.wagon</groupId>
@@ -60,5 +52,11 @@ under the conditions ~ of the licence contract with cyber:con GmbH. -->
         <version>0.0.6</version>
       </extension>
     </extensions>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+      </plugin>
+    </plugins>
   </build>
 </project>

@@ -14,19 +14,6 @@
   <packaging>pom</packaging>
   <name>Bndly commons REST Parent</name>
 
-  <distributionManagement>
-    <repository>
-      <id>packagecloud-bndly</id>
-      <url>packagecloud+https://packagecloud.io/bndly/bndly-commons</url>
-      <layout>default</layout>
-    </repository>
-    <snapshotRepository>
-      <id>packagecloud-bndly</id>
-      <url>packagecloud+https://packagecloud.io/bndly/bndly-commons</url>
-      <layout>default</layout>
-    </snapshotRepository>
-  </distributionManagement>
-
   <modules>
     <module>annotation-api</module>
     <module>annotation-impl</module>
@@ -92,6 +79,17 @@
 		<module>swagger-integration</module>
 -->
   </modules>
+
+    <distributionManagement>
+    <repository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+    <snapshotRepository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
 
   <build>
     <extensions>

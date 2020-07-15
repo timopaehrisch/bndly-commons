@@ -13,16 +13,14 @@
   <packaging>bundle</packaging>
   <name>Bndly commons REST Common Beans</name>
 
-  <distributionManagement>
+    <distributionManagement>
     <repository>
-      <id>packagecloud-bndly</id>
-      <url>packagecloud+https://packagecloud.io/bndly/bndly-commons</url>
-      <layout>default</layout>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
     </repository>
     <snapshotRepository>
-      <id>packagecloud-bndly</id>
-      <url>packagecloud+https://packagecloud.io/bndly/bndly-commons</url>
-      <layout>default</layout>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
     </snapshotRepository>
   </distributionManagement>
 
@@ -47,6 +45,13 @@
   </dependencies>
 
   <build>
+    <extensions>
+      <extension>
+        <groupId>io.packagecloud.maven.wagon</groupId>
+        <artifactId>maven-packagecloud-wagon</artifactId>
+        <version>0.0.6</version>
+      </extension>
+    </extensions>
     <plugins>
       <plugin>
         <groupId>org.apache.felix</groupId>
@@ -58,12 +63,5 @@
         </configuration>
       </plugin>
     </plugins>
-    <extensions>
-      <extension>
-        <groupId>io.packagecloud.maven.wagon</groupId>
-        <artifactId>maven-packagecloud-wagon</artifactId>
-        <version>0.0.6</version>
-      </extension>
-    </extensions>
   </build>
 </project>
