@@ -1,0 +1,3 @@
+= Bndly commons rest repository-resource
+
+This bundle provides a rest interface to deal with Bndly schema repository

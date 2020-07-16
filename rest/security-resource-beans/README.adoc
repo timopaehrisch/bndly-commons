@@ -1,0 +1,3 @@
+= Bndly commons rest security-resource-beans
+
+Data structures for security-resource

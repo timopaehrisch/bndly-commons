@@ -1,0 +1,3 @@
+= Bndly commons rest query-resource
+
+This bundle provides a resource to do queries on the Bndly schema

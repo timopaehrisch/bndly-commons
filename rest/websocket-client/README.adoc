@@ -1,0 +1,3 @@
+= Bndly commons rest websocket-client
+
+The java client side for websocket communication

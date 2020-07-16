@@ -1,0 +1,3 @@
+= Bndly commons pdf document-pdfprinter-mapping
+
+A mapper to transform a document-model into a structure the pdfwriter can handle.

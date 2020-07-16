@@ -1,0 +1,3 @@
+= Bndly commons rest jetty-bundle-locator
+
+Code used by the jetty-bridge to find the bundle containing a jetty

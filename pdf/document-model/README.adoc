@@ -1,0 +1,3 @@
+= Bndly commons pdf document-model
+
+Model classes for XML definition files for pdf rendering

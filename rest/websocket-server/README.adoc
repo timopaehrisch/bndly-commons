@@ -1,0 +1,3 @@
+= Bndly commons rest websocket-server
+
+The server side for websocket communication

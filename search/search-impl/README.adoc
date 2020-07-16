@@ -1,0 +1,3 @@
+= Bndly common search impl
+
+The implementation of the search api

@@ -1,0 +1,3 @@
+= Bndly commons templating velocity
+
+The bundle provides services to call velocity for rendering templates

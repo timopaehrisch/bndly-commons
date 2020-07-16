@@ -1,0 +1,3 @@
+= Bndly commons rest mail-resource
+
+A module providing a rest interface for sending emails

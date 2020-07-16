@@ -1,0 +1,3 @@
+= Bndly commons rest schema-resource-beans
+
+Data structures for the schema-resource

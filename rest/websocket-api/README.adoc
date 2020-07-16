@@ -1,0 +1,3 @@
+= Bndly commons rest websocket-api
+
+The api to communicate event based over websockets

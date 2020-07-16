@@ -1,0 +1,3 @@
+= Bndly commons rest security-resource
+
+The bundle provides a REST endpoint for security related actions (create update delete user accounts)

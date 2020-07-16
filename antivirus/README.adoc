@@ -1,0 +1,4 @@
+= Bndly commons Antivirus
+
+Contains an API and implementation to use clamav in the underlying OS to scan files.
+It is used to scan files uploaded by users before they are stored in the system.

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.bndly.common.antivirus</groupId>
+		<artifactId>org.bndly.common.antivirus.antivirus</artifactId>
+		<version>${revision}${changelist}</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+
+	<properties>
+		<test.clamavhost>127.0.0.1</test.clamavhost>
+		<test.clamavport>3310</test.clamavport>
+		<test.clamavskip>true</test.clamavskip>
+	</properties>
+
+	<artifactId>org.bndly.common.antivirus.antivirus-impl</artifactId>
+	<packaging>bundle</packaging>
+	<name>Bndly commons Antivirus Impl</name>
+
+	<distributionManagement>
+		<repository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.bndly.common.antivirus</groupId>
+			<artifactId>org.bndly.common.antivirus.antivirus-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+		</dependency>
+	</dependencies>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<configuration>
+					<instructions>
+						<Bundle-Category>antivirus</Bundle-Category>
+						<Fragment-Host>org.bndly.common.antivirus.antivirus-osgi</Fragment-Host>
+						<Export-Package>org.bndly.common.antivirus.impl</Export-Package>
+					</instructions>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<systemPropertyVariables>
+						<test.clamavhost>${test.clamavhost}</test.clamavhost>
+						<test.clamavport>${test.clamavport}</test.clamavport>
+						<test.clamavskip>${test.clamavskip}</test.clamavskip>
+						<user.country>DE</user.country>
+						<user.language>de</user.language>
+					</systemPropertyVariables>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	
+	<profiles>
+		<profile>
+			<id>clamavlocal</id>
+			<properties>
+				<test.clamavskip>false</test.clamavskip>
+			</properties>
+		</profile>
+	</profiles>
+</project>

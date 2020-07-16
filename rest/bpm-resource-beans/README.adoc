@@ -1,0 +1,3 @@
+= Bndly commons rest bpm-resource-beans
+
+Data structures for the bpm-resource rest service.

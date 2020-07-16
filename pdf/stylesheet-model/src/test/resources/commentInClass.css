@@ -1,0 +1,5 @@
+.aclass {
+	/*comment1*/
+	color/*comment2*/: /*comment3*/red;
+	foo: "/path/to/bar";
+}

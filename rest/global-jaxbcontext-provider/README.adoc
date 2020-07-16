@@ -1,0 +1,3 @@
+= Bndly commons rest global-jaxbcontext-provider
+
+A provider for a JAXB context for the rest-client

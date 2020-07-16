@@ -1,0 +1,3 @@
+= Bndly commons rest schema-resource
+
+This bundle provides a REST endpoint to read the Bndly schema

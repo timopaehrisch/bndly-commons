@@ -1,0 +1,3 @@
+= Bndly commons rest client-impl
+
+The implementation of a REST client

@@ -1,0 +1,3 @@
+= Bndly commons CORS
+
+A module to detect Cross Origin Resource Sharing (CORS) and to inject specific headers in a request-response.

@@ -1,0 +1,3 @@
+= Bndly commons BPM
+
+This module integrates a BMP engine (activiti in the actual implementation) into the OSGI container.

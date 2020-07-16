@@ -1,0 +1,29 @@
+{
+	"items": [
+		{
+			"type": "Foo",
+			"entries": [
+				{
+					"name": "lonesome foo"
+				}
+			]
+		},
+		{
+			"type": "Bar",
+			"entries": [
+				{
+					"myFoo": {
+						"name": "this is foo"
+					},
+					"name": "this is bar"
+				},
+				{
+					"myFoo": {
+						"name": "another foo"
+					},
+					"name": "another bar"
+				}
+			]
+		}
+	]
+}

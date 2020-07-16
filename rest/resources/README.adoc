@@ -1,0 +1,3 @@
+= Bndly commons rest resources
+
+This bundle provides an REST endpoint of the root node of the Bndly eBusiness Core.

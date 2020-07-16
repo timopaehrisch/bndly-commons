@@ -1,0 +1,3 @@
+= Bndly commons templating
+
+A module integrating velocity with Bndly for templating (pdf, emails, etc.)

@@ -1,0 +1,3 @@
+= Bndly commons rest jsonp-provider
+
+A pluggable message provider to marshal JSON in a JSONP style.

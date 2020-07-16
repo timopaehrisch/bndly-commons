@@ -1,0 +1,3 @@
+= Bndly common rest cache-resource
+
+In implementation of CacheResource

@@ -1,0 +1,3 @@
+= Bndly commons rest swagger-integration
+
+This bundle provides REST endpoints to access the documentation of services which were annotated with the @Documentation annotation.

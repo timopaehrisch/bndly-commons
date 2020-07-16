@@ -1,0 +1,3 @@
+= Bndly commons rest form-mapper
+
+Basis classes to map form data

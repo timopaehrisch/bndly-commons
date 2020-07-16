@@ -1,0 +1,79 @@
+<!--
+  #%L
+  PDF templating
+  %%
+  Copyright (C) 2013 - 2020 Cybercon GmbH
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+       http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
+<document itemId="documentRoot">
+	<page itemId="pageRoot">
+		<container itemId="mainContent" class="mainContent">
+			<paragraph itemId="testParagraph">
+				<text itemId="testText" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a tellus non odio dictum vehicula vel at nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed molestie justo. Suspendisse potenti. Mauris sed tellus ac odio consectetur viverra. Nunc ultrices, augue at convallis adipiscing, mauris magna faucibus felis, non varius urna turpis ac urna. Aliquam tincidunt pretium commodo. Phasellus convallis turpis ut neque elementum luctus. Quisque blandit egestas faucibus." />
+			</paragraph>
+ 			<table itemId="testTable" class="testTable">
+				<tableColumn itemId="testColumn1">
+					<tableCell itemId="testCell1">
+						<text value="Zeile 1" />
+					</tableCell>
+					<tableCell itemId="testCell2">
+						<text value="Zeile 2" />
+					</tableCell>
+					<tableCell itemId="testCell3">
+						<text value="Zeile 3" />
+					</tableCell>
+ 					<tableCell itemId="testCell4">
+						<text value="Zeile 4" />
+					</tableCell>
+ 					<tableCell itemId="testCell5">
+						<text value="Zeile 5" />
+					</tableCell>
+ 					<tableCell itemId="testCell6">
+						<text value="Zeile 6" />
+					</tableCell>
+				</tableColumn>
+				<tableColumn itemId="testColumn2">
+					<tableCell itemId="testCell1">
+						<text value="Krims 1" />
+						<text value="Krams 1" />
+					</tableCell>
+					<tableCell itemId="testCell2">
+						<text value="Krims 2" />
+						<text value="Krams 2" />
+					</tableCell>
+					<tableCell itemId="testCell3">
+						<text value="Krims 3" />
+						<text value="Krams 3" />
+					</tableCell>
+ 					<tableCell itemId="testCell4">
+						<text value="Krims 4" />
+						<text value="Krams 4" />
+					</tableCell>
+ 					<tableCell itemId="testCell5">
+						<text value="Krims 5" />
+						<text value="Krams 5" />
+					</tableCell>
+ 					<tableCell itemId="testCell6">
+						<text value="Krims 6" />
+						<text value="Krams 6" />
+					</tableCell>
+				</tableColumn>
+			</table>
+			<paragraph itemId="testParagraph2">
+				<text itemId="testText" value="normaler text." />
+			</paragraph>
+		</container>
+	</page>
+</document>

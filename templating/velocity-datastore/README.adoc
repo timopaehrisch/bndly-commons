@@ -1,0 +1,3 @@
+= Bndly commons templating velocity-datastore
+
+The module contains the bridge between velocity placeholders and the Bndly data api.

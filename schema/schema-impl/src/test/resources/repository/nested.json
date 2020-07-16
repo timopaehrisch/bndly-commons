@@ -1,0 +1,6 @@
+{
+	"type": "cy:unstructured",
+	"properties": {
+		"prop": "this is nested"
+	}
+}

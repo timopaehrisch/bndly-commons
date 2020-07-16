@@ -1,0 +1,3 @@
+= Bndly commons search schema
+
+The bundle provides a bridge between solr and the Bndly schema to allow solr to index schema data

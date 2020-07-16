@@ -1,0 +1,199 @@
+<!--
+  #%L
+  PDF XML Document Model
+  %%
+  Copyright (C) 2013 - 2020 Cybercon GmbH
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+       http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
+<document itemId="documentRoot">
+	<page itemId="pageRoot">
+		<pageTemplate itemId="template">
+			<image itemId="companyLogo" source="../images/foo.jpg" />
+			<table itemId="footerTable">
+				<tableColumn>
+					<tableCell>
+						<text value="Rechtsform" />
+					</tableCell>
+					<tableCell>
+						<text value="Sitz der Gesellschaft" />
+					</tableCell>
+					<tableCell>
+						<text value="USt-ID" />
+					</tableCell>
+					<tableCell>
+						<text value="Steuernummer" />
+					</tableCell>
+				</tableColumn>
+				<tableColumn>
+					<tableCell>
+						<text value="Registergericht" />
+					</tableCell>
+					<tableCell>
+						<text value="Handelsregisternummer" />
+					</tableCell>
+					<tableCell>
+						<text value="Geschäftsführer" />
+					</tableCell>
+					<tableCell>
+						<text value="Aufsichtsrat" />
+					</tableCell>
+				</tableColumn>
+				<tableColumn>
+					<tableCell>
+						<text value="Meine Bank" />
+					</tableCell>
+					<tableCell>
+						<text value="Konotonummer: 12345678900" />
+					</tableCell>
+					<tableCell>
+						<text value="BLZ 30040050" />
+					</tableCell>
+				</tableColumn>
+				<container itemId="contact">
+					<text value="Oliver Runge" />
+					<text value="Königswinterer Str. 374" />
+					<text value="53227 Bonn" />
+					<text value="Telefon: +49 (0)228 227776 0" />
+					<text value="Fax: +49 (0)228 227776 29" />
+					<text value="www.bndly.org" />
+					<text value="bndly@cybercon.de" />
+				</container>
+			</table>
+		</pageTemplate>
+		<container itemId="mainContent">
+			<text value="Bestellung" />
+			<text value="Bestellnummer: 10216" />
+			<text value="Bestelldatum: 22.3.2012" />
+			<table itemId="orderPositionTable">
+				<tableColumn>
+					<tableCell>
+						<text value="Position" />
+					</tableCell>
+					<tableCell>
+						<text value="1" />
+					</tableCell>
+					<tableCell>
+						<text value="2" />
+					</tableCell>
+					<tableCell>
+						<text value="3" />
+					</tableCell>
+				</tableColumn>
+				<tableColumn>
+					<tableCell>
+						<text value="Bezeichnung" />
+					</tableCell>
+					<tableCell>
+						<text value="iPhone 3G mit einem supper tollen langen namen der bitte unbedingt in eine neue zeile umbrechen sollte, weil ich sonst anfange zu weinen." />
+					</tableCell>
+					<tableCell>
+						<text value="iPad 2" />
+					</tableCell>
+					<tableCell>
+						<text value="iMac 24" />
+					</tableCell>
+				</tableColumn>
+				<tableColumn>
+					<tableCell>
+						<text value="Menge" />
+					</tableCell>
+					<tableCell>
+						<text value="2" />
+					</tableCell>
+					<tableCell>
+						<text value="1" />
+					</tableCell>
+					<tableCell>
+						<text value="1" />
+					</tableCell>
+				</tableColumn>
+				<tableColumn>
+					<tableCell>
+						<text value="Preis" />
+						<text value="brutto" />
+					</tableCell>
+					<tableCell>
+						<text value="1.258,00 EUR" />
+					</tableCell>
+					<tableCell>
+						<text value="599,00 EUR" />
+					</tableCell>
+					<tableCell>
+						<text value="1.249,00 EUR" />
+					</tableCell>
+				</tableColumn>
+			</table>
+			<table itemId="addressTable">
+				<tableColumn>
+					<tableCell>
+						<text value="Kunde:"/>
+					</tableCell>
+					<tableCell>
+						<text value="Herr Bndly" />
+						<text value="Bndly" />
+						<text value="Königswinterer Str. 374" />
+						<text value="12345 Bonn" />
+					</tableCell>
+				</tableColumn>
+				<tableColumn>
+					<tableCell>
+						<text value="Rechnungsadresse:"/>
+					</tableCell>
+					<tableCell>
+						<text value="siehe Kundenadresse" />
+					</tableCell>
+				</tableColumn>
+				<tableColumn>
+					<tableCell>
+						<text value="Lieferadresse:"/>
+					</tableCell>
+					<tableCell>
+						<text value="siehe Kundenadresse" />
+					</tableCell>
+				</tableColumn>
+			</table>
+			<table itemId="otherDetailsTable">
+				<tableColumn>
+					<tableCell>
+						<text value="Zahlungsart:" />
+					</tableCell>
+					<tableCell>
+						<text value="Bezahlt am:" />
+					</tableCell>
+					<tableCell>
+						<text value="Versand:" />
+					</tableCell>
+					<tableCell>
+						<text value="Notizen:" />
+					</tableCell>
+				</tableColumn>
+				<tableColumn>
+					<tableCell>
+						<text value="Vorkasse" />
+					</tableCell>
+					<tableCell>
+						<text value="noch nicht bezahlt" />
+					</tableCell>
+					<tableCell>
+						<text value="Standard" />
+					</tableCell>
+					<tableCell>
+						<text value="- keine Notizen -" />
+					</tableCell>
+				</tableColumn>
+			</table>
+		</container>
+	</page>
+</document>

@@ -1,0 +1,3 @@
+= Bndly commons mail-api
+
+The module provides an api to send emails

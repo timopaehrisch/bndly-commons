@@ -1,0 +1,30 @@
+{
+	"items": [{
+			"type": "Foo",
+			"entries": [{
+					"_key": "Foo_1",
+					"name": "lonesome foo"
+				}, {
+					"_key": "Foo_2",
+					"name": "this is foo"
+				}, {
+					"_key": "Foo_3",
+					"name": "another foo"
+				}]
+		}, {
+			"type": "Bar",
+			"entries": [{
+					"_key": "Bar_1",
+					"myFoo": {
+						"_ref": "Foo_2"
+					},
+					"name": "this is bar"
+				}, {
+					"_key": "Bar_2",
+					"myFoo": {
+						"_ref": "Foo_3"
+					},
+					"name": "another bar"
+				}]
+		}]
+}

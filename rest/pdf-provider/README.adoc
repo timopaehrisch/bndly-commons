@@ -1,0 +1,3 @@
+= Bndly commons rest pdf provider resource
+
+The module provides pdf for pdf-resource

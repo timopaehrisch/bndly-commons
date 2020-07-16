@@ -1,0 +1,3 @@
+= Bndly commons rest mail-resource-beans
+
+Data structures for mail-resource rest-service

@@ -1,0 +1,3 @@
+= Bndly commons pdf templates
+
+A Module for handling templates to generate pdf documents.

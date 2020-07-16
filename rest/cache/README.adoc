@@ -1,0 +1,3 @@
+= Bndly commons rest cache
+
+A module providing a cache for rest-responses which is aware of actions which render the cache content invalid

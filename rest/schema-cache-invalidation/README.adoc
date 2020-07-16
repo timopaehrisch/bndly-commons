@@ -1,0 +1,3 @@
+= Bndly commons rest schema-cache-invalidation
+
+The bundle provides a CacheInvalidator which flushes cache entries when schema changes happen.

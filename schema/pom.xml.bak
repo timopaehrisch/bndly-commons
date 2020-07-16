@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.bndly.common</groupId>
+		<artifactId>org.bndly.common.applications</artifactId>
+		<version>${revision}${changelist}</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+
+	<groupId>org.bndly.common.schema</groupId>
+	<artifactId>org.bndly.common.schema.schema</artifactId>
+	<packaging>pom</packaging>
+	<name>Schema</name>
+
+	<distributionManagement>
+		<repository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<modules>
+		<module>model</module>
+		<module>schema-api</module>
+		<module>schema-beans</module>
+		<module>schema-json-beans</module>
+		<module>maven-schema-bean-generator</module>
+		<module>schema-fixtures</module>
+		<module>schema-repository</module>
+		<module>schema-repository-datastore</module>
+		<module>schema-impl</module>
+		<module>deletion-strategy</module>
+		<module>schema-json</module>
+		<module>schema-definition-parser</module>
+		<module>schema-activator</module>
+		<module>schema-vendor</module>
+	</modules>
+
+</project>

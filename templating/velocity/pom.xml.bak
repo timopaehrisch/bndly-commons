@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- ~ Copyright (c) 2011, cyber:con GmbH, Bonn. ~ ~ All rights reserved. 
+This source file is provided to you for ~ documentation purposes only. No 
+part of this file may be ~ reproduced or copied in any form without the written 
+~ permission of cyber:con GmbH. No liability can be accepted ~ for errors 
+in the program or in the documentation or for damages ~ which arise through 
+using the program. If an error is discovered, ~ cyber:con GmbH will endeavour 
+to correct it as quickly as possible. ~ The use of the program occurs exclusively 
+under the conditions ~ of the licence contract with cyber:con GmbH. -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.bndly.common.templating</groupId>
+		<artifactId>org.bndly.common.templating.templating</artifactId>
+		<version>${revision}${changelist}</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+
+	<artifactId>org.bndly.common.templating.velocity</artifactId>
+	<name>Bndly commons Velocity</name>
+	<packaging>bundle</packaging>
+
+	<distributionManagement>
+		<repository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.owasp.encoder</groupId>
+			<artifactId>encoder</artifactId>
+			<version>1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.bndly.common</groupId>
+			<artifactId>org.bndly.common.reflection</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.bndly.common.templating</groupId>
+			<artifactId>org.bndly.common.templating.velocity-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.bndly.common.templating</groupId>
+			<artifactId>org.bndly.common.templating.velocity-osgi</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.velocity</groupId>
+			<artifactId>velocity</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>osgi.cmpn</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>org.osgi.core</artifactId>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<configuration>
+					<instructions>
+						<Bundle-Category>templating</Bundle-Category>
+						<Embed-Dependency>encoder</Embed-Dependency>
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

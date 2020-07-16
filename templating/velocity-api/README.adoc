@@ -1,0 +1,3 @@
+= Bndly commons templating velocity-api
+
+The api classes for velocity services

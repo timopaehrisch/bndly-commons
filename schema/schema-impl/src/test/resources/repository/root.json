@@ -1,0 +1,10 @@
+{
+	"type": "cy:root",
+	"properties": {
+		"prop": "this is a property on root"
+	},
+	"children": {
+		"nested": {},
+		"nestedMulti": []
+	}
+}

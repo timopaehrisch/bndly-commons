@@ -1,0 +1,67 @@
+document {
+	font-family: "times";
+	font-size: 10pt;
+	font-baseline-shift: 0.15;
+}
+
+page {
+	margin-top: 0pt;
+	margin-right: 0pt;
+	margin-bottom: 0pt;
+	margin-left: 0pt;
+	text-align: left;
+	width: 595.4069pt;
+	height: 842.0754pt;
+}
+
+table {
+	margin-top: 0pt;
+	margin-right: 0pt;
+	margin-bottom: 0pt;
+	margin-left: 0pt;
+	overflow: "split";
+}
+
+.mainContent {
+	margin-top: 110pt;
+	margin-right: 20pt;
+	margin-bottom: 20pt;
+	margin-left: 20pt;
+}
+
+.title {
+	font-family: "times";
+	font-size: 20pt;
+	line-height: 1.5;
+}
+
+.subTitle {
+	line-height: 1.4;
+}
+
+.orderPositionTable {
+	border: 0.125pt;
+}
+
+.addressTable {
+	border: 0;
+}
+
+.otherDetailsTable {
+	overflow: "full";
+	border: 0;
+}
+
+.footerTable {
+	font-size: 8pt;
+	top: 750pt;
+	left: 20pt;
+	border: 0;
+}
+
+.contact {
+	font-size: 10pt;
+	top: 80pt;
+	left: 455pt;
+	text-align: right;
+}

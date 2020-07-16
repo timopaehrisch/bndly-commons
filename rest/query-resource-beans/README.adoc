@@ -1,0 +1,3 @@
+= Bndly commons rest query-resource-beans
+
+Data structures for the query-resource

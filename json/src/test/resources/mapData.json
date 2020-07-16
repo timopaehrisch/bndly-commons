@@ -1,0 +1,22 @@
+{
+    "mapAsArray": [
+	{
+	    "productNumber": "123",
+	    "productName": "Drucker",
+	    "price": 139.99
+	}
+    ],
+    "mapAsObject": {
+	"123-": {
+	    "productNumber": "123",
+	    "productName": "Drucker",
+	    "price": 139.99
+	},
+	"123-3": {
+	    "productNumber": "123",
+	    "productName": "Drucker",
+	    "price": 139.99,
+	    "wishListId": 3
+	}
+    }
+}

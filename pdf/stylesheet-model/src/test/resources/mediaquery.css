@@ -1,0 +1,26 @@
+body {
+	color: black;
+}
+
+@media screen and (max-width: 300px) {
+	body {
+		background-color: lightblue;
+	}
+}
+
+@media screen and (max-width: 300px) and (min-width: 150px) {
+	body {
+		background-color: brown;
+	}
+	a {
+		color: black;
+	}
+}
+
+@media (color), handheld and (orientation: landscape) {
+	
+}
+
+@media not all and (monochrome) {
+	
+}

@@ -1,0 +1,3 @@
+= Bndly commons rest client
+
+Provides a REST client side base.

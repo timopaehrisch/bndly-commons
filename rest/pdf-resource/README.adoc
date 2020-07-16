@@ -1,0 +1,3 @@
+= Bndly commons rest pdf-resource
+
+The PDF resource is used to generate and provide PDF files based on templates.

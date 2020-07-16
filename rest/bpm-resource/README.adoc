@@ -1,0 +1,3 @@
+= Bndly commons rest bpm-resource
+
+A rest service to talk to an BPM engine (activiti if you use the Bndly BPM module)

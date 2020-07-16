@@ -1,0 +1,3 @@
+= Bndly commons rest jetty-bridge
+
+A module to handle servlet and filter deployment to a jetty running in a different bundle.

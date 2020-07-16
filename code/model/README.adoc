@@ -1,0 +1,3 @@
+= Bndly commons code model
+
+A model to handle various aspects of code generation

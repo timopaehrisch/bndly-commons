@@ -1,0 +1,3 @@
+= Bndly commons rest client-api
+
+The module provides the api for the client side of a REST connection

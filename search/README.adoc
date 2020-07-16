@@ -1,0 +1,3 @@
+= Bndly commons search
+
+A search module which uses solr to search over various content including data in a Bndly schema

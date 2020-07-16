@@ -1,0 +1,3 @@
+= Bndly commons rest schema-websocket
+
+The bundle provides a listener to handle websocket events regarding schema data changes.

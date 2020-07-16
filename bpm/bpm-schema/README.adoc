@@ -1,0 +1,3 @@
+= Bndly commons BPM Schema
+
+The glue between BPM and a bndly commons schema to access data connected with a BPM process

@@ -1,0 +1,3 @@
+= Bndly commons templating velocity-osgi
+
+The bundle provides an extension of velocity ResourceLoader.

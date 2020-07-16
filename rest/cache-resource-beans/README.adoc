@@ -1,0 +1,3 @@
+= Bndly commons rest cache-resource-beans
+
+Data structures to communicate with cache-resource through rest servcies.

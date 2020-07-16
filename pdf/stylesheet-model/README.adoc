@@ -1,0 +1,3 @@
+= Bndly commons pdf stylesheet-model
+
+A model to represent styling information used by the pdfprinter.

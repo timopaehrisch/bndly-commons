@@ -1,0 +1,14 @@
+{
+	"type": "cy:unstructured",
+	"properties": {
+		"prop": "string value",
+		"propMulti": ["a", "b"],
+		"propDecimal": 3.99,
+		"propLong": 3,
+		"propDouble": 3.999999,
+		"propDate@DATE": 1442651040000,
+		"propBoolean": true,
+		"propBinary@BINARY": "VGhpcyBpcyBiaW5hcnk=",
+		"propEntityRef@ENTITY": "Unrelated;1"
+	}
+}

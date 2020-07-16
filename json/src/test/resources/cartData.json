@@ -1,0 +1,14 @@
+{
+    "identifier": "123123123",
+    "items": [
+	{
+	    "productName": "Drucker",
+	    "price": 139.99
+	},
+	{
+	    "productName": "Drucker",
+	    "price": 139.99,
+	    "wishListId": 3
+	}
+    ]
+}

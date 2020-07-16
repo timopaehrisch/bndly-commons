@@ -1,0 +1,3 @@
+= Bndly commons code
+
+This module is about Code generation out of structural definitionl like the schema.xml used in schema.

@@ -1,0 +1,3 @@
+= Bndly commons rest data-cache-invalidation
+
+A handler for cache invalidation

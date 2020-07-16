@@ -19,65 +19,51 @@
     <module>annotation-impl</module>
     <module>annotations</module>
     <module>beans</module>
-    <!--
-		<module>cache</module>
-		<module>cache-resource</module>
-		<module>cache-resource-beans</module>
-		<module>cache-websocket</module>
-		<module>query-resource</module>
-		<module>query-resource-beans</module>
-		<module>websocket-api</module>
-		<module>websocket-client</module>
-		<module>websocket-server</module>
-		<module>resources</module>
--->
+    <module>cache</module>
+    <module>cache-resource</module>
+    <module>cache-resource-beans</module>
+    <module>cache-websocket</module>
+    <module>query-resource</module>
+    <module>query-resource-beans</module>
+    <module>websocket-api</module>
+    <module>websocket-client</module>
+    <module>websocket-server</module>
+    <module>resources</module>
     <module>api-descriptor</module>
-    <!--
-		<module>pdf-provider</module>
-		<module>pdf-resource</module>
--->
+    <module>pdf-provider</module>
+    <module>pdf-resource</module>
     <module>link-injector</module>
     <module>cycle-breaker</module>
     <module>response-postprocessor</module>
     <module>jaxb-resource-renderer</module>
-    <!--
-		<module>data-cache-invalidation</module>
-		<module>jsonp-provider</module>
-		<module>global-jaxbcontext-provider</module>
-		<module>mail-resource</module>
-		<module>mail-resource-beans</module>
-		<module>bpm-resource-beans</module>
-		<module>bpm-resource</module>
--->
+    <module>data-cache-invalidation</module>
+    <module>jsonp-provider</module>
+    <module>global-jaxbcontext-provider</module>
+    <module>mail-resource</module>
+    <module>mail-resource-beans</module>
+    <module>bpm-resource-beans</module>
+    <module>bpm-resource</module>
     <module>data-resource-beans</module>
     <module>data-resource</module>
-    <!--
-		<module>schema-resource-beans</module>
-		<module>schema-resource</module>
-		<module>search-resource-beans</module>
-		<module>search-resource</module>
-		<module>repository-resource</module>
-		<module>schema-websocket</module>
-		<module>schema-cache-invalidation</module>
-		<module>client</module>
-		<module>entity-resource</module>
--->
+    <module>schema-resource-beans</module>
+    <module>schema-resource</module>
+    <module>search-resource-beans</module>
+    <module>search-resource</module>
+    <module>repository-resource</module>
+    <module>schema-websocket</module>
+    <module>schema-cache-invalidation</module>
+    <module>client</module>
+    <module>entity-resource</module>
     <module>api</module>
-    <!--
-		<module>jetty-bridge</module>
-		<module>jetty-bundle-locator</module>
--->
+    <module>jetty-bridge</module>
+    <module>jetty-bundle-locator</module>
     <module>servlet-base</module>
-    <!-->
-		<module>servlet-impl</module>
-		<module>form-mapper</module>
--->
+    <module>servlet-impl</module>
+    <module>form-mapper</module>
     <module>security</module>
-    <!--
-		<module>security-resource</module>
-		<module>security-resource-beans</module>
-		<module>swagger-integration</module>
--->
+    <module>security-resource</module>
+    <module>security-resource-beans</module>
+    <module>swagger-integration</module>
   </modules>
 
   <distributionManagement>
@@ -92,13 +78,7 @@
   </distributionManagement>
 
   <build>
-    <extensions>
-      <extension>
-        <groupId>io.packagecloud.maven.wagon</groupId>
-        <artifactId>maven-packagecloud-wagon</artifactId>
-        <version>0.0.6</version>
-      </extension>
-    </extensions>
+
   </build>
 
 </project>

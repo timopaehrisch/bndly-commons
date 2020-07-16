@@ -1,0 +1,3 @@
+= Bndly commons rest entity-resource
+
+This is a generic resource to deal with a schema based entity type.

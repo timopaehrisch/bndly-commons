@@ -1,0 +1,3 @@
+= Bndly commons cors-default-filter
+
+A minimal implementation of the CORS Origin Service

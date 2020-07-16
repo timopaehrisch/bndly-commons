@@ -1,0 +1,3 @@
+= Bndly commons pdf pdfprinter
+
+A module to generate a pdf from a document-model

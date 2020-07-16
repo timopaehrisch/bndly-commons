@@ -1,0 +1,3 @@
+= Bndly commons JSON
+
+A module providing a library to handle JSON marshalling and unmarshalling.

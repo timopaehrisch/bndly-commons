@@ -1,0 +1,3 @@
+= Bndly commons rest cache-websocket
+
+A module implementing a remote cache which can be communicated with with websocket messages.

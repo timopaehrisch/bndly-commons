@@ -1,0 +1,3 @@
+= Bndly commons mail
+
+A module to send emails and communicate with a underlying mail server.
