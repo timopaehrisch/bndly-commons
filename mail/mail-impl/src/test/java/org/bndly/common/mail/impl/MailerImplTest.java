@@ -94,7 +94,7 @@ public class MailerImplTest {
 		attachment.setFileName("readme.txt");
 //		String testDataOfAttachment = "hello world";
 		StringBuilder stringBuilder = new StringBuilder();
-		for (int i = 0; i < 256 * 1024 / 8; i++) {
+		for (int i = 0; i < 4 * 1024 / 8; i++) {
 			stringBuilder.append("01234567");
 		}
 		String testDataOfAttachment = stringBuilder.toString();
