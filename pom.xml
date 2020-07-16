@@ -4,7 +4,7 @@
 
   <groupId>org.bndly.common</groupId>
   <artifactId>org.bndly.common.applications</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Bndly Applications</name>
@@ -69,7 +69,7 @@
 
   <scm>
     <connection>scm:git:git@github.com:bndly/bndly-commons.git</connection>
-    <tag>v1.0.0</tag>
+    <tag>v5.0.0</tag>
     <url>https://github.com/bndly/bndly-commons.git</url>
   </scm>
 
