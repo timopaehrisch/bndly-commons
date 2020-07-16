@@ -1,0 +1,1 @@
+{"type":"cy:bean","properties":{"beanType@STRING":"cy:requiremodule","name@STRING":"Hogan","script@STRING":"","initMethod@STRING":"","proxy@STRING":"/repo/libs/vendor/bin/hogan/hogan-3.0.2.min.amd","export@STRING":"","moduleId@STRING":"hogan"}}

@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>$swaggerDocument.info.title REST API Documentation</title>
+		<meta name="description" content="This is a documentation of the REST API of the $swaggerDocument.info.title">
+		<meta name="author" content="Bndly">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href="$urlPrefix/repo/libs/vendor/bin/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="shortcut icon" href="$urlPrefix/repo/libs/bndly/data/favicon.ico">
+		<link rel="icon" type="image/png" href="$urlPrefix/repo/libs/bndly/data/favicon.png" sizes="63x63">
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="page-header">
+				<h1>$swaggerDocument.info.title <small>$swaggerDocument.info.version</small></h1>
+			</div>
+			<p class="lead">
+			$swaggerDocument.info.description
+			<br />
+			<a href="$swaggerDocument.info.license.url" class="btn btn-sm btn-primary">$swaggerDocument.info.license.name</a>
+			</p>
+			#if ($swaggerDocument.externalDocs)
+			<p>$swaggerDocument.externalDocs.description <a href="$swaggerDocument.externalDocs.url">more</a></p>
+			#end
+
+			$partialRenderer.include($swaggerDocument, "rest-api/warning.vm")
+
+			<div class="row">
+				<div class="col-md-4">
+					$partialRenderer.include($swaggerDocument, "rest-api/bundledoc-nav.vm")
+					$partialRenderer.include($swaggerDocument, "rest-api/gloassary-nav.vm")
+
+					<h5>Resource groups</h5>
+					<div class="list-group">
+						#foreach ( $tag in $swaggerDocument.tags)
+								<a class="list-group-item" href="#tag_$tag.name">$tag.name</a>
+						#end
+						#set( $untagged = $pathsByTag.get('untagged') )
+						#if ($untagged)
+								<a class="list-group-item" href="#tag_untagged">untagged</a>
+						#end
+					</div>
+
+					<h5>Message packages</h5>
+					<div class="list-group">
+						#foreach ( $package in $messagesByPackage.keySet())
+								<a class="list-group-item" href="#message_$package">$package</a>
+						#end
+					</div>
+				</div>
+				<div class="col-md-8">
+					$partialRenderer.include($swaggerDocument, "rest-api/bundledoc.vm")
+					$partialRenderer.include($swaggerDocument, "rest-api/gloassary.vm")
+
+					<h2>Resource groups</h2>
+					#foreach ( $tag in $swaggerDocument.tags)
+						<h2 id="tag_$tag.name">$tag.name <small>$tag.description</small></h2>
+						#set( $paths = $pathsByTag.get($tag.name) )
+						#foreach ( $key in $paths.keySet())
+							<h3>$key <small><a href="#nav">back to navigation</a></small></h3>
+							#set( $path = $paths.get($key) )
+							#if ($path.getGet())
+							<h4>GET</h4>
+							$partialRenderer.include($path.getGet(), "rest-api/operation.vm")
+							#end
+							#if ($path.getPost())
+							<h4>POST</h4>
+							$partialRenderer.include($path.getPost(), "rest-api/operation.vm")
+							#end
+							#if ($path.getPut())
+							<h4>PUT</h4>
+							$partialRenderer.include($path.getPut(), "rest-api/operation.vm")
+							#end
+							#if ($path.getDelete())
+							<h4>DELETE</h4>
+							$partialRenderer.include($path.getDelete(), "rest-api/operation.vm")
+							#end
+							#if ($path.getOptions())
+							<h4>OPTIONS</h4>
+							$partialRenderer.include($path.getOptions(), "rest-api/operation.vm")
+							#end
+							#if ($path.getHead())
+							<h4>HEAD</h4>
+							$partialRenderer.include($path.getHead(), "rest-api/operation.vm")
+							#end
+						#end
+					#end
+					#if ($untagged)
+						<h2 id="tag_untagged">untagged <small>Resources that do not have a tagging</small></h2>
+						#set( $paths = $untagged )
+						#foreach ( $key in $paths.keySet())
+							<h3>$key <small><a href="#nav">back to navigation</a></small></h3>
+							#set( $path = $paths.get($key) )
+							#if ($path.getGet())
+							<h4>GET</h4>
+							$partialRenderer.include($path.getGet(), "rest-api/operation.vm")
+							#end
+							#if ($path.getPost())
+							<h4>POST</h4>
+							$partialRenderer.include($path.getPost(), "rest-api/operation.vm")
+							#end
+							#if ($path.getPut())
+							<h4>PUT</h4>
+							$partialRenderer.include($path.getPut(), "rest-api/operation.vm")
+							#end
+							#if ($path.getDelete())
+							<h4>DELETE</h4>
+							$partialRenderer.include($path.getDelete(), "rest-api/operation.vm")
+							#end
+							#if ($path.getOptions())
+							<h4>OPTIONS</h4>
+							$partialRenderer.include($path.getOptions(), "rest-api/operation.vm")
+							#end
+							#if ($path.getHead())
+							<h4>HEAD</h4>
+							$partialRenderer.include($path.getHead(), "rest-api/operation.vm")
+							#end
+						#end
+					#end
+
+					<h2>Message Packages</h2>
+					#foreach ( $package in $messagesByPackage.keySet())
+						<h2 id="message_$package">$package</h2>
+						#set( $mapOfMessagesInPackage = $messagesByPackage.get($package) )
+						#foreach ( $messageClassName in $mapOfMessagesInPackage.keySet())
+							#set( $message = $mapOfMessagesInPackage.get($messageClassName) )
+							<h4 id="/definitions/$messageClassName">$messageClassName</h4>
+							<p>
+							$message.externalDocs.description
+							</p>
+							<a href="$message.externalDocs.url" class="btn btn-sm btn-primary">Download</a>
+						#end
+					#end
+				</div>
+			</div>
+		</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="$urlPrefix/repo/libs/vendor/bin/jquery/js/jquery-3.2.1.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="$urlPrefix/repo/libs/vendor/bin/bootstrap/js/bootstrap.min.js"></script>
+	</body>
+</html>

@@ -1,0 +1,1 @@
+{"type":"cy:bean","properties":{"beanType@STRING":"cy:requiremodule","name@STRING":"require","script@STRING":"","initMethod@STRING":"","proxy@STRING":"/repo/libs/vendor/bin/require/require","export@STRING":"","moduleId@STRING":"requirejs"}}

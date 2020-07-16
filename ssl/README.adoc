@@ -1,0 +1,3 @@
+= Bndly commons ssl
+
+A module providing an httpsclient as service

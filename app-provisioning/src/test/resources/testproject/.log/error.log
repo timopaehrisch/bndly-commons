@@ -1,0 +1,240 @@
+2016-06-30 11:44:22,051 INFO [FelixStartLevel] o.e.j.u.log [Log.java:186] Logging initialized @4280ms
+2016-06-30 11:44:22,062 INFO [FelixStartLevel] o.e.j.o.b.i.s.DefaultJettyAtJettyHomeHelper [DefaultJettyAtJettyHomeHelper.java:159] Configuring the default jetty server with [file:/Users/thomas/dev/cybercon-applications/app-provisioning/src/test/resources/testproject/target/app-start/jettyhome/etc/jetty.xml, file:/Users/thomas/dev/cybercon-applications/app-provisioning/src/test/resources/testproject/target/app-start/jettyhome/etc/jetty-selector.xml, file:/Users/thomas/dev/cybercon-applications/app-provisioning/src/test/resources/testproject/target/app-start/jettyhome/etc/jetty-deployer.xml, file:/Users/thomas/dev/cybercon-applications/app-provisioning/src/test/resources/testproject/target/app-start/jettyhome/etc/jetty-ssl.xml, file:/Users/thomas/dev/cybercon-applications/app-provisioning/src/test/resources/testproject/target/app-start/jettyhome/etc/jetty-https.xml]
+2016-06-30 11:44:22,062 INFO [FelixStartLevel] o.e.j.o.b.i.s.DefaultJettyAtJettyHomeHelper [DefaultJettyAtJettyHomeHelper.java:160] JETTY.HOME=/Users/thomas/dev/cybercon-applications/app-provisioning/src/test/resources/testproject/target/app-start/jettyhome
+2016-06-30 11:44:22,150 INFO [FelixStartLevel] o.e.j.s.Server [Server.java:327] jetty-9.2.13.v20150730
+2016-06-30 11:44:22,161 INFO [FelixStartLevel] o.e.j.s.AbstractNCSARequestLog [NCSARequestLog.java:230] Opened /Users/thomas/dev/cybercon-applications/app-provisioning/src/test/resources/testproject/target/app-start/log/jetty/2016_06_30.request.log
+2016-06-30 11:44:22,178 INFO [FelixStartLevel] o.e.j.s.ServerConnector [AbstractConnector.java:266] Started ServerConnector@728feb01{HTTP/1.1}{0.0.0.0:8081}
+2016-06-30 11:44:22,352 INFO [FelixStartLevel] o.e.j.s.ServerConnector [AbstractConnector.java:266] Started ServerConnector@71a7e190{SSL-http/1.1}{0.0.0.0:8443}
+2016-06-30 11:44:22,353 INFO [FelixStartLevel] o.e.j.s.Server [Server.java:379] Started @4583ms
+2016-06-30 11:44:22,353 INFO [FelixStartLevel] o.e.j.o.b.i.s.DefaultJettyAtJettyHomeHelper [DefaultJettyAtJettyHomeHelper.java:180] Default jetty server configured
+2016-06-30 11:44:22,424 INFO [FelixStartLevel] o.e.j.s.h.ContextHandler [ContextHandler.java:744] Started o.e.j.s.ServletContextHandler@a148a13{/,null,AVAILABLE}
+2016-06-30 11:44:22,506 INFO [FelixStartLevel] d.c.c.o.c.SecuredPersistenceManagerImpl [SecuredPersistenceManagerImpl.java:83] init of SecuredPersistenceManagerImpl in location /Users/thomas/dev/cybercon-applications/app-provisioning/src/test/resources/testproject/target/app-start/felix-cache/bundle72/data/config
+2016-06-30 11:44:22,668 INFO [FelixStartLevel] d.c.c.b.i.ActivitiEngineProvider [ActivitiEngineProvider.java:485] activating process engine provider
+2016-06-30 11:44:22,673 INFO [FelixStartLevel] d.c.c.b.i.ActivitiEngineProvider [ActivitiEngineProvider.java:498] activated process engine provider
+2016-06-30 11:44:22,837 INFO [FelixStartLevel] d.c.c.b.d.i.BusinessProcessDataStoreFactoryImpl [BusinessProcessDataStoreFactoryImpl.java:199] creating a business process data store for 'store', because there was a new datastore in the application.
+2016-06-30 11:44:22,854 INFO [FelixStartLevel] d.c.c.d.DataSourcePoolImpl [DataSourcePoolImpl.java:232] found jdbc driver org.postgresql.Driver in version 9.4.0.build-1201
+2016-06-30 11:44:22,854 INFO [FelixStartLevel] d.c.c.d.DataSourcePoolImpl [DataSourcePoolImpl.java:232] found jdbc driver org.postgresql.Driver in version 9.3.0.1103
+2016-06-30 11:44:22,854 INFO [FelixStartLevel] d.c.c.d.DataSourcePoolImpl [DataSourcePoolImpl.java:232] found jdbc driver org.h2.Driver in version 1.4.178
+2016-06-30 11:44:22,855 INFO [FelixStartLevel] d.c.c.d.DataSourcePoolImpl [DataSourcePoolImpl.java:232] found jdbc driver com.mysql.jdbc.Driver in version 5.1.30
+2016-06-30 11:44:22,855 INFO [FelixStartLevel] d.c.c.d.DataSourcePoolImpl [DataSourcePoolImpl.java:232] found jdbc driver com.mysql.fabric.jdbc.FabricMySQLDriver in version 5.1.30
+2016-06-30 11:44:22,856 WARN [FelixStartLevel] d.c.c.d.DataSourcePoolImpl [DataSourcePoolImpl.java:180] no driverClass defined for datasource datasource
+2016-06-30 11:44:23,448 INFO [FelixStartLevel] d.c.r.c.i.ControllerResourceRegistryImpl [ControllerResourceRegistryImpl.java:118] deploying controller de.cybercon.rest.bpm.resources.BusinessProcessDefinitionResource
+2016-06-30 11:44:23,464 INFO [FelixStartLevel] d.c.r.c.i.ControllerResourceRegistryImpl [ControllerResourceRegistryImpl.java:118] deploying controller de.cybercon.rest.bpm.resources.BusinessProcessInstanceResource
+2016-06-30 11:44:23,468 INFO [FelixStartLevel] d.c.r.c.i.ControllerResourceRegistryImpl [ControllerResourceRegistryImpl.java:118] deploying controller de.cybercon.rest.cache.resources.CacheResource
+2016-06-30 11:44:23,473 INFO [FelixStartLevel] d.c.r.c.i.ControllerResourceRegistryImpl [ControllerResourceRegistryImpl.java:118] deploying controller de.cybercon.rest.data.resources.DataResource
+2016-06-30 11:44:23,493 INFO [FelixStartLevel] d.c.r.c.i.ControllerResourceRegistryImpl [ControllerResourceRegistryImpl.java:118] deploying controller de.cybercon.rest.schema.resources.SchemaResource
+2016-06-30 11:44:23,769 INFO [FelixStartLevel] d.c.r.d.CommunicationDescriptionProviderImpl [CommunicationDescriptionProviderImpl.java:235] activating communication description provider
+2016-06-30 11:44:23,769 INFO [FelixStartLevel] d.c.r.d.CommunicationDescriptionProviderImpl [CommunicationDescriptionProviderImpl.java:236] activated communication description provider
+2016-06-30 11:44:23,775 INFO [FelixStartLevel] d.c.r.c.i.ControllerResourceRegistryImpl [ControllerResourceRegistryImpl.java:118] deploying controller de.cybercon.rest.root.controller.RootResourceImpl
+2016-06-30 11:44:23,778 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:302] creating atom link injectors from de.cybercon.rest.bpm.resources.BusinessProcessDefinitionResource
+2016-06-30 11:44:23,791 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:302] creating atom link injectors from de.cybercon.rest.bpm.resources.BusinessProcessInstanceResource
+2016-06-30 11:44:23,792 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:302] creating atom link injectors from de.cybercon.rest.cache.resources.CacheResource
+2016-06-30 11:44:23,793 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:302] creating atom link injectors from de.cybercon.rest.data.resources.DataResource
+2016-06-30 11:44:23,795 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:302] creating atom link injectors from de.cybercon.rest.schema.resources.SchemaResource
+2016-06-30 11:44:23,796 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:302] creating atom link injectors from de.cybercon.rest.root.controller.RootResourceImpl
+2016-06-30 11:44:23,817 INFO [FelixStartLevel] d.c.r.c.i.ControllerResourceRegistryImpl [ControllerResourceRegistryImpl.java:118] deploying controller de.cybercon.rest.swagger.resource.SwaggerResource
+2016-06-30 11:44:23,822 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:205] deploying controller de.cybercon.rest.swagger.resource.SwaggerResource
+2016-06-30 11:44:23,822 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:302] creating atom link injectors from de.cybercon.rest.swagger.resource.SwaggerResource
+2016-06-30 11:44:23,855 INFO [FelixStartLevel] d.c.r.i.ResourceDelegatingServlet [ResourceDelegatingServlet.java:247] Starting resource delegating servlet
+2016-06-30 11:44:23,856 INFO [FelixStartLevel] d.c.d.r.j.b.JettyBridge [JettyBridge.java:144] DEPLOYING SERVLET: /cybercon de.cybercon.rest.impl.ResourceDelegatingServlet
+2016-06-30 11:44:23,856 INFO [FelixStartLevel] o.e.j.s.h.ContextHandler [ContextHandler.java:744] Started o.e.j.s.ServletContextHandler@33179ee2{/cybercon,null,AVAILABLE}
+2016-06-30 11:44:23,857 INFO [FelixStartLevel] d.c.r.i.ResourceDelegatingServlet [ResourceDelegatingServlet.java:251] Started resource delegating servlet
+2016-06-30 11:44:23,878 INFO [FelixStartLevel] d.c.d.r.j.b.JettyBridge [JettyBridge.java:144] DEPLOYING SERVLET: /websocket de.cybercon.de.rest.websocket.server.impl.WebsocketRegistryImpl$1
+2016-06-30 11:44:23,896 INFO [FelixStartLevel] o.e.j.s.h.ContextHandler [ContextHandler.java:744] Started o.e.j.s.ServletContextHandler@2c693552{/websocket,null,AVAILABLE}
+2016-06-30 11:44:24,088 INFO [FelixStartLevel] d.c.s.i.f.EngineFactoryImpl [EngineFactoryImpl.java:306] Schema implementation licensed to SWYP
+2016-06-30 11:44:24,129 INFO [FelixStartLevel] d.c.s.i.SearchServiceImpl [SearchServiceImpl.java:51] activating search service
+2016-06-30 11:44:24,130 INFO [FelixStartLevel] d.c.s.i.SearchServiceImpl [SearchServiceImpl.java:54] activated search service. tracking solr servers now
+2016-06-30 11:44:24,136 INFO [FelixStartLevel] d.c.r.c.i.ControllerResourceRegistryImpl [ControllerResourceRegistryImpl.java:118] deploying controller de.cybercon.rest.search.resources.SearchResource
+2016-06-30 11:44:24,137 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:205] deploying controller de.cybercon.rest.search.resources.SearchResource
+2016-06-30 11:44:24,139 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:302] creating atom link injectors from de.cybercon.rest.search.resources.SearchResource
+2016-06-30 11:44:24,365 INFO [FelixStartLevel] d.c.r.c.i.ControllerResourceRegistryImpl [ControllerResourceRegistryImpl.java:118] deploying controller de.cybercon.rest.swagger.resource.DocumentationResource
+2016-06-30 11:44:24,366 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:205] deploying controller de.cybercon.rest.swagger.resource.DocumentationResource
+2016-06-30 11:44:24,366 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:302] creating atom link injectors from de.cybercon.rest.swagger.resource.DocumentationResource
+2016-06-30 11:44:24,377 INFO [FelixStartLevel] d.c.r.c.i.ControllerResourceRegistryImpl [ControllerResourceRegistryImpl.java:118] deploying controller de.cybercon.rest.mail.resources.MailResource
+2016-06-30 11:44:24,378 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:205] deploying controller de.cybercon.rest.mail.resources.MailResource
+2016-06-30 11:44:24,379 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:302] creating atom link injectors from de.cybercon.rest.mail.resources.MailResource
+2016-06-30 11:44:24,783 INFO [Thread-14] d.c.d.r.j.b.JettyBridge [JettyBridge.java:78] stopping jetty
+2016-06-30 11:44:24,788 INFO [Thread-14] o.e.j.s.ServerConnector [AbstractConnector.java:306] Stopped ServerConnector@728feb01{HTTP/1.1}{0.0.0.0:8081}
+2016-06-30 11:44:24,789 INFO [Thread-14] o.e.j.s.ServerConnector [AbstractConnector.java:306] Stopped ServerConnector@71a7e190{SSL-http/1.1}{0.0.0.0:8443}
+2016-06-30 11:44:24,799 INFO [Thread-14] o.e.j.s.h.ContextHandler [ContextHandler.java:865] Stopped o.e.j.s.ServletContextHandler@a148a13{/,null,UNAVAILABLE}
+2016-06-30 11:44:24,800 INFO [Thread-14] d.c.d.r.j.b.JettyBridge [JettyBridge.java:70] stopped jetty
+2016-06-30 11:47:10,748 INFO [FelixStartLevel] o.e.j.u.log [Log.java:186] Logging initialized @4643ms
+2016-06-30 11:47:10,760 INFO [FelixStartLevel] o.e.j.o.b.i.s.DefaultJettyAtJettyHomeHelper [DefaultJettyAtJettyHomeHelper.java:159] Configuring the default jetty server with [file:/Users/thomas/dev/cybercon-applications/app-provisioning/src/test/resources/testproject/target/app-start/jettyhome/etc/jetty.xml, file:/Users/thomas/dev/cybercon-applications/app-provisioning/src/test/resources/testproject/target/app-start/jettyhome/etc/jetty-selector.xml, file:/Users/thomas/dev/cybercon-applications/app-provisioning/src/test/resources/testproject/target/app-start/jettyhome/etc/jetty-deployer.xml, file:/Users/thomas/dev/cybercon-applications/app-provisioning/src/test/resources/testproject/target/app-start/jettyhome/etc/jetty-ssl.xml, file:/Users/thomas/dev/cybercon-applications/app-provisioning/src/test/resources/testproject/target/app-start/jettyhome/etc/jetty-https.xml]
+2016-06-30 11:47:10,760 INFO [FelixStartLevel] o.e.j.o.b.i.s.DefaultJettyAtJettyHomeHelper [DefaultJettyAtJettyHomeHelper.java:160] JETTY.HOME=/Users/thomas/dev/cybercon-applications/app-provisioning/src/test/resources/testproject/target/app-start/jettyhome
+2016-06-30 11:47:10,855 INFO [FelixStartLevel] o.e.j.s.Server [Server.java:327] jetty-9.2.13.v20150730
+2016-06-30 11:47:10,866 INFO [FelixStartLevel] o.e.j.s.AbstractNCSARequestLog [NCSARequestLog.java:230] Opened /Users/thomas/dev/cybercon-applications/app-provisioning/src/test/resources/testproject/target/app-start/log/jetty/2016_06_30.request.log
+2016-06-30 11:47:10,886 INFO [FelixStartLevel] o.e.j.s.ServerConnector [AbstractConnector.java:266] Started ServerConnector@4c7ef95e{HTTP/1.1}{0.0.0.0:8081}
+2016-06-30 11:47:11,111 INFO [FelixStartLevel] o.e.j.s.ServerConnector [AbstractConnector.java:266] Started ServerConnector@28308f61{SSL-http/1.1}{0.0.0.0:8443}
+2016-06-30 11:47:11,111 INFO [FelixStartLevel] o.e.j.s.Server [Server.java:379] Started @5007ms
+2016-06-30 11:47:11,112 INFO [FelixStartLevel] o.e.j.o.b.i.s.DefaultJettyAtJettyHomeHelper [DefaultJettyAtJettyHomeHelper.java:180] Default jetty server configured
+2016-06-30 11:47:11,180 INFO [FelixStartLevel] o.e.j.s.h.ContextHandler [ContextHandler.java:744] Started o.e.j.s.ServletContextHandler@4a8fcc5a{/,null,AVAILABLE}
+2016-06-30 11:47:11,264 INFO [FelixStartLevel] d.c.c.o.c.SecuredPersistenceManagerImpl [SecuredPersistenceManagerImpl.java:83] init of SecuredPersistenceManagerImpl in location /Users/thomas/dev/cybercon-applications/app-provisioning/src/test/resources/testproject/target/app-start/felix-cache/bundle72/data/config
+2016-06-30 11:47:11,447 INFO [FelixStartLevel] d.c.c.b.i.ActivitiEngineProvider [ActivitiEngineProvider.java:485] activating process engine provider
+2016-06-30 11:47:11,448 INFO [FelixStartLevel] d.c.c.b.i.ActivitiEngineProvider [ActivitiEngineProvider.java:498] activated process engine provider
+2016-06-30 11:47:11,616 INFO [FelixStartLevel] d.c.c.b.d.i.BusinessProcessDataStoreFactoryImpl [BusinessProcessDataStoreFactoryImpl.java:199] creating a business process data store for 'store', because there was a new datastore in the application.
+2016-06-30 11:47:11,633 INFO [FelixStartLevel] d.c.c.d.DataSourcePoolImpl [DataSourcePoolImpl.java:232] found jdbc driver org.postgresql.Driver in version 9.4.0.build-1201
+2016-06-30 11:47:11,633 INFO [FelixStartLevel] d.c.c.d.DataSourcePoolImpl [DataSourcePoolImpl.java:232] found jdbc driver org.postgresql.Driver in version 9.3.0.1103
+2016-06-30 11:47:11,633 INFO [FelixStartLevel] d.c.c.d.DataSourcePoolImpl [DataSourcePoolImpl.java:232] found jdbc driver org.h2.Driver in version 1.4.178
+2016-06-30 11:47:11,634 INFO [FelixStartLevel] d.c.c.d.DataSourcePoolImpl [DataSourcePoolImpl.java:232] found jdbc driver com.mysql.jdbc.Driver in version 5.1.30
+2016-06-30 11:47:11,634 INFO [FelixStartLevel] d.c.c.d.DataSourcePoolImpl [DataSourcePoolImpl.java:232] found jdbc driver com.mysql.fabric.jdbc.FabricMySQLDriver in version 5.1.30
+2016-06-30 11:47:11,635 WARN [FelixStartLevel] d.c.c.d.DataSourcePoolImpl [DataSourcePoolImpl.java:180] no driverClass defined for datasource datasource
+2016-06-30 11:47:12,147 INFO [FelixStartLevel] d.c.r.c.i.ControllerResourceRegistryImpl [ControllerResourceRegistryImpl.java:118] deploying controller de.cybercon.rest.bpm.resources.BusinessProcessDefinitionResource
+2016-06-30 11:47:12,163 INFO [FelixStartLevel] d.c.r.c.i.ControllerResourceRegistryImpl [ControllerResourceRegistryImpl.java:118] deploying controller de.cybercon.rest.bpm.resources.BusinessProcessInstanceResource
+2016-06-30 11:47:12,167 INFO [FelixStartLevel] d.c.r.c.i.ControllerResourceRegistryImpl [ControllerResourceRegistryImpl.java:118] deploying controller de.cybercon.rest.cache.resources.CacheResource
+2016-06-30 11:47:12,179 INFO [FelixStartLevel] d.c.r.c.i.ControllerResourceRegistryImpl [ControllerResourceRegistryImpl.java:118] deploying controller de.cybercon.rest.schema.resources.SchemaResource
+2016-06-30 11:47:12,194 INFO [FelixStartLevel] d.c.r.c.i.ControllerResourceRegistryImpl [ControllerResourceRegistryImpl.java:118] deploying controller de.cybercon.rest.data.resources.DataResource
+2016-06-30 11:47:12,491 INFO [FelixStartLevel] d.c.r.d.CommunicationDescriptionProviderImpl [CommunicationDescriptionProviderImpl.java:235] activating communication description provider
+2016-06-30 11:47:12,492 INFO [FelixStartLevel] d.c.r.d.CommunicationDescriptionProviderImpl [CommunicationDescriptionProviderImpl.java:236] activated communication description provider
+2016-06-30 11:47:12,499 INFO [FelixStartLevel] d.c.r.c.i.ControllerResourceRegistryImpl [ControllerResourceRegistryImpl.java:118] deploying controller de.cybercon.rest.root.controller.RootResourceImpl
+2016-06-30 11:47:12,509 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:302] creating atom link injectors from de.cybercon.rest.bpm.resources.BusinessProcessDefinitionResource
+2016-06-30 11:47:12,528 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:302] creating atom link injectors from de.cybercon.rest.bpm.resources.BusinessProcessInstanceResource
+2016-06-30 11:47:12,535 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:302] creating atom link injectors from de.cybercon.rest.cache.resources.CacheResource
+2016-06-30 11:47:12,536 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:302] creating atom link injectors from de.cybercon.rest.schema.resources.SchemaResource
+2016-06-30 11:47:12,537 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:302] creating atom link injectors from de.cybercon.rest.data.resources.DataResource
+2016-06-30 11:47:12,540 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:302] creating atom link injectors from de.cybercon.rest.root.controller.RootResourceImpl
+2016-06-30 11:47:12,569 INFO [FelixStartLevel] d.c.r.c.i.ControllerResourceRegistryImpl [ControllerResourceRegistryImpl.java:118] deploying controller de.cybercon.rest.swagger.resource.SwaggerResource
+2016-06-30 11:47:12,581 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:205] deploying controller de.cybercon.rest.swagger.resource.SwaggerResource
+2016-06-30 11:47:12,581 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:302] creating atom link injectors from de.cybercon.rest.swagger.resource.SwaggerResource
+2016-06-30 11:47:12,627 INFO [FelixStartLevel] d.c.r.i.ResourceDelegatingServlet [ResourceDelegatingServlet.java:247] Starting resource delegating servlet
+2016-06-30 11:47:12,627 INFO [FelixStartLevel] d.c.d.r.j.b.JettyBridge [JettyBridge.java:144] DEPLOYING SERVLET: /cybercon de.cybercon.rest.impl.ResourceDelegatingServlet
+2016-06-30 11:47:12,628 INFO [FelixStartLevel] o.e.j.s.h.ContextHandler [ContextHandler.java:744] Started o.e.j.s.ServletContextHandler@3b2bf269{/cybercon,null,AVAILABLE}
+2016-06-30 11:47:12,629 INFO [FelixStartLevel] d.c.r.i.ResourceDelegatingServlet [ResourceDelegatingServlet.java:251] Started resource delegating servlet
+2016-06-30 11:47:12,648 INFO [FelixStartLevel] d.c.d.r.j.b.JettyBridge [JettyBridge.java:144] DEPLOYING SERVLET: /websocket de.cybercon.de.rest.websocket.server.impl.WebsocketRegistryImpl$1
+2016-06-30 11:47:12,681 INFO [FelixStartLevel] o.e.j.s.h.ContextHandler [ContextHandler.java:744] Started o.e.j.s.ServletContextHandler@779754d8{/websocket,null,AVAILABLE}
+2016-06-30 11:47:12,834 INFO [FelixStartLevel] d.c.s.i.f.EngineFactoryImpl [EngineFactoryImpl.java:306] Schema implementation licensed to SWYP
+2016-06-30 11:47:12,890 INFO [FelixStartLevel] d.c.s.i.SearchServiceImpl [SearchServiceImpl.java:51] activating search service
+2016-06-30 11:47:12,890 INFO [FelixStartLevel] d.c.s.i.SearchServiceImpl [SearchServiceImpl.java:54] activated search service. tracking solr servers now
+2016-06-30 11:47:12,894 INFO [FelixStartLevel] d.c.r.c.i.ControllerResourceRegistryImpl [ControllerResourceRegistryImpl.java:118] deploying controller de.cybercon.rest.search.resources.SearchResource
+2016-06-30 11:47:12,894 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:205] deploying controller de.cybercon.rest.search.resources.SearchResource
+2016-06-30 11:47:12,895 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:302] creating atom link injectors from de.cybercon.rest.search.resources.SearchResource
+2016-06-30 11:47:13,101 INFO [FelixStartLevel] d.c.r.c.i.ControllerResourceRegistryImpl [ControllerResourceRegistryImpl.java:118] deploying controller de.cybercon.rest.mail.resources.MailResource
+2016-06-30 11:47:13,103 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:205] deploying controller de.cybercon.rest.mail.resources.MailResource
+2016-06-30 11:47:13,103 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:302] creating atom link injectors from de.cybercon.rest.mail.resources.MailResource
+2016-06-30 11:47:13,111 INFO [FelixStartLevel] d.c.r.c.i.ControllerResourceRegistryImpl [ControllerResourceRegistryImpl.java:118] deploying controller de.cybercon.rest.swagger.resource.DocumentationResource
+2016-06-30 11:47:13,112 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:205] deploying controller de.cybercon.rest.swagger.resource.DocumentationResource
+2016-06-30 11:47:13,112 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:302] creating atom link injectors from de.cybercon.rest.swagger.resource.DocumentationResource
+2016-06-30 11:47:13,502 INFO [Thread-14] d.c.d.r.j.b.JettyBridge [JettyBridge.java:78] stopping jetty
+2016-06-30 11:47:13,508 INFO [Thread-14] o.e.j.s.ServerConnector [AbstractConnector.java:306] Stopped ServerConnector@4c7ef95e{HTTP/1.1}{0.0.0.0:8081}
+2016-06-30 11:47:13,508 INFO [Thread-14] o.e.j.s.ServerConnector [AbstractConnector.java:306] Stopped ServerConnector@28308f61{SSL-http/1.1}{0.0.0.0:8443}
+2016-06-30 11:47:13,520 INFO [Thread-14] o.e.j.s.h.ContextHandler [ContextHandler.java:865] Stopped o.e.j.s.ServletContextHandler@4a8fcc5a{/,null,UNAVAILABLE}
+2016-06-30 11:47:13,521 INFO [Thread-14] d.c.d.r.j.b.JettyBridge [JettyBridge.java:70] stopped jetty
+2016-06-30 11:48:37,405 INFO [FelixStartLevel] o.e.j.u.log [Log.java:186] Logging initialized @4158ms
+2016-06-30 11:48:37,411 INFO [FelixStartLevel] o.e.j.o.b.i.s.DefaultJettyAtJettyHomeHelper [DefaultJettyAtJettyHomeHelper.java:159] Configuring the default jetty server with [file:/Users/thomas/dev/cybercon-applications/app-provisioning/src/test/resources/testproject/target/app-start/jettyhome/etc/jetty.xml, file:/Users/thomas/dev/cybercon-applications/app-provisioning/src/test/resources/testproject/target/app-start/jettyhome/etc/jetty-selector.xml, file:/Users/thomas/dev/cybercon-applications/app-provisioning/src/test/resources/testproject/target/app-start/jettyhome/etc/jetty-deployer.xml, file:/Users/thomas/dev/cybercon-applications/app-provisioning/src/test/resources/testproject/target/app-start/jettyhome/etc/jetty-ssl.xml, file:/Users/thomas/dev/cybercon-applications/app-provisioning/src/test/resources/testproject/target/app-start/jettyhome/etc/jetty-https.xml]
+2016-06-30 11:48:37,411 INFO [FelixStartLevel] o.e.j.o.b.i.s.DefaultJettyAtJettyHomeHelper [DefaultJettyAtJettyHomeHelper.java:160] JETTY.HOME=/Users/thomas/dev/cybercon-applications/app-provisioning/src/test/resources/testproject/target/app-start/jettyhome
+2016-06-30 11:48:37,497 INFO [FelixStartLevel] o.e.j.s.Server [Server.java:327] jetty-9.2.13.v20150730
+2016-06-30 11:48:37,509 INFO [FelixStartLevel] o.e.j.s.AbstractNCSARequestLog [NCSARequestLog.java:230] Opened /Users/thomas/dev/cybercon-applications/app-provisioning/src/test/resources/testproject/target/app-start/log/jetty/2016_06_30.request.log
+2016-06-30 11:48:37,527 INFO [FelixStartLevel] o.e.j.s.ServerConnector [AbstractConnector.java:266] Started ServerConnector@5ac41557{HTTP/1.1}{0.0.0.0:8081}
+2016-06-30 11:48:37,702 INFO [FelixStartLevel] o.e.j.s.ServerConnector [AbstractConnector.java:266] Started ServerConnector@6af836ee{SSL-http/1.1}{0.0.0.0:8443}
+2016-06-30 11:48:37,702 INFO [FelixStartLevel] o.e.j.s.Server [Server.java:379] Started @4457ms
+2016-06-30 11:48:37,703 INFO [FelixStartLevel] o.e.j.o.b.i.s.DefaultJettyAtJettyHomeHelper [DefaultJettyAtJettyHomeHelper.java:180] Default jetty server configured
+2016-06-30 11:48:37,752 INFO [FelixStartLevel] o.e.j.s.h.ContextHandler [ContextHandler.java:744] Started o.e.j.s.ServletContextHandler@33dff71c{/,null,AVAILABLE}
+2016-06-30 11:48:37,820 INFO [FelixStartLevel] d.c.c.o.c.SecuredPersistenceManagerImpl [SecuredPersistenceManagerImpl.java:83] init of SecuredPersistenceManagerImpl in location /Users/thomas/dev/cybercon-applications/app-provisioning/src/test/resources/testproject/target/app-start/felix-cache/bundle72/data/config
+2016-06-30 11:48:37,949 INFO [FelixStartLevel] d.c.c.b.i.ActivitiEngineProvider [ActivitiEngineProvider.java:485] activating process engine provider
+2016-06-30 11:48:37,951 INFO [FelixStartLevel] d.c.c.b.i.ActivitiEngineProvider [ActivitiEngineProvider.java:498] activated process engine provider
+2016-06-30 11:48:38,108 INFO [FelixStartLevel] d.c.c.b.d.i.BusinessProcessDataStoreFactoryImpl [BusinessProcessDataStoreFactoryImpl.java:199] creating a business process data store for 'store', because there was a new datastore in the application.
+2016-06-30 11:48:38,123 INFO [FelixStartLevel] d.c.c.d.DataSourcePoolImpl [DataSourcePoolImpl.java:232] found jdbc driver org.postgresql.Driver in version 9.4.0.build-1201
+2016-06-30 11:48:38,123 INFO [FelixStartLevel] d.c.c.d.DataSourcePoolImpl [DataSourcePoolImpl.java:232] found jdbc driver org.postgresql.Driver in version 9.3.0.1103
+2016-06-30 11:48:38,123 INFO [FelixStartLevel] d.c.c.d.DataSourcePoolImpl [DataSourcePoolImpl.java:232] found jdbc driver org.h2.Driver in version 1.4.178
+2016-06-30 11:48:38,123 INFO [FelixStartLevel] d.c.c.d.DataSourcePoolImpl [DataSourcePoolImpl.java:232] found jdbc driver com.mysql.jdbc.Driver in version 5.1.30
+2016-06-30 11:48:38,123 INFO [FelixStartLevel] d.c.c.d.DataSourcePoolImpl [DataSourcePoolImpl.java:232] found jdbc driver com.mysql.fabric.jdbc.FabricMySQLDriver in version 5.1.30
+2016-06-30 11:48:38,124 WARN [FelixStartLevel] d.c.c.d.DataSourcePoolImpl [DataSourcePoolImpl.java:180] no driverClass defined for datasource datasource
+2016-06-30 11:48:38,587 INFO [FelixStartLevel] d.c.r.c.i.ControllerResourceRegistryImpl [ControllerResourceRegistryImpl.java:118] deploying controller de.cybercon.rest.data.resources.DataResource
+2016-06-30 11:48:38,605 INFO [FelixStartLevel] d.c.r.c.i.ControllerResourceRegistryImpl [ControllerResourceRegistryImpl.java:118] deploying controller de.cybercon.rest.bpm.resources.BusinessProcessDefinitionResource
+2016-06-30 11:48:38,610 INFO [FelixStartLevel] d.c.r.c.i.ControllerResourceRegistryImpl [ControllerResourceRegistryImpl.java:118] deploying controller de.cybercon.rest.bpm.resources.BusinessProcessInstanceResource
+2016-06-30 11:48:38,630 INFO [FelixStartLevel] d.c.r.c.i.ControllerResourceRegistryImpl [ControllerResourceRegistryImpl.java:118] deploying controller de.cybercon.rest.schema.resources.SchemaResource
+2016-06-30 11:48:38,637 INFO [FelixStartLevel] d.c.r.c.i.ControllerResourceRegistryImpl [ControllerResourceRegistryImpl.java:118] deploying controller de.cybercon.rest.cache.resources.CacheResource
+2016-06-30 11:48:38,655 INFO [FelixStartLevel] d.c.r.c.i.ControllerResourceRegistryImpl [ControllerResourceRegistryImpl.java:118] deploying controller de.cybercon.rest.swagger.resource.SwaggerResource
+2016-06-30 11:48:38,889 INFO [FelixStartLevel] d.c.r.d.CommunicationDescriptionProviderImpl [CommunicationDescriptionProviderImpl.java:235] activating communication description provider
+2016-06-30 11:48:38,889 INFO [FelixStartLevel] d.c.r.d.CommunicationDescriptionProviderImpl [CommunicationDescriptionProviderImpl.java:236] activated communication description provider
+2016-06-30 11:48:38,893 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:302] creating atom link injectors from de.cybercon.rest.data.resources.DataResource
+2016-06-30 11:48:38,909 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:302] creating atom link injectors from de.cybercon.rest.bpm.resources.BusinessProcessDefinitionResource
+2016-06-30 11:48:38,910 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:302] creating atom link injectors from de.cybercon.rest.bpm.resources.BusinessProcessInstanceResource
+2016-06-30 11:48:38,911 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:302] creating atom link injectors from de.cybercon.rest.schema.resources.SchemaResource
+2016-06-30 11:48:38,912 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:302] creating atom link injectors from de.cybercon.rest.cache.resources.CacheResource
+2016-06-30 11:48:38,913 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:302] creating atom link injectors from de.cybercon.rest.swagger.resource.SwaggerResource
+2016-06-30 11:48:38,917 INFO [FelixStartLevel] d.c.r.c.i.ControllerResourceRegistryImpl [ControllerResourceRegistryImpl.java:118] deploying controller de.cybercon.rest.root.controller.RootResourceImpl
+2016-06-30 11:48:38,918 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:205] deploying controller de.cybercon.rest.root.controller.RootResourceImpl
+2016-06-30 11:48:38,919 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:302] creating atom link injectors from de.cybercon.rest.root.controller.RootResourceImpl
+2016-06-30 11:48:38,945 INFO [FelixStartLevel] d.c.r.i.ResourceDelegatingServlet [ResourceDelegatingServlet.java:247] Starting resource delegating servlet
+2016-06-30 11:48:38,946 INFO [FelixStartLevel] d.c.d.r.j.b.JettyBridge [JettyBridge.java:144] DEPLOYING SERVLET: /cybercon de.cybercon.rest.impl.ResourceDelegatingServlet
+2016-06-30 11:48:38,947 INFO [FelixStartLevel] o.e.j.s.h.ContextHandler [ContextHandler.java:744] Started o.e.j.s.ServletContextHandler@17565b8d{/cybercon,null,AVAILABLE}
+2016-06-30 11:48:38,947 INFO [FelixStartLevel] d.c.r.i.ResourceDelegatingServlet [ResourceDelegatingServlet.java:251] Started resource delegating servlet
+2016-06-30 11:48:38,961 INFO [FelixStartLevel] d.c.d.r.j.b.JettyBridge [JettyBridge.java:144] DEPLOYING SERVLET: /websocket de.cybercon.de.rest.websocket.server.impl.WebsocketRegistryImpl$1
+2016-06-30 11:48:38,975 INFO [FelixStartLevel] o.e.j.s.h.ContextHandler [ContextHandler.java:744] Started o.e.j.s.ServletContextHandler@347d1a7f{/websocket,null,AVAILABLE}
+2016-06-30 11:48:39,119 INFO [FelixStartLevel] d.c.s.i.f.EngineFactoryImpl [EngineFactoryImpl.java:306] Schema implementation licensed to SWYP
+2016-06-30 11:48:39,146 INFO [FelixStartLevel] d.c.s.i.SearchServiceImpl [SearchServiceImpl.java:51] activating search service
+2016-06-30 11:48:39,146 INFO [FelixStartLevel] d.c.s.i.SearchServiceImpl [SearchServiceImpl.java:54] activated search service. tracking solr servers now
+2016-06-30 11:48:39,150 INFO [FelixStartLevel] d.c.r.c.i.ControllerResourceRegistryImpl [ControllerResourceRegistryImpl.java:118] deploying controller de.cybercon.rest.search.resources.SearchResource
+2016-06-30 11:48:39,150 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:205] deploying controller de.cybercon.rest.search.resources.SearchResource
+2016-06-30 11:48:39,151 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:302] creating atom link injectors from de.cybercon.rest.search.resources.SearchResource
+2016-06-30 11:48:39,324 INFO [FelixStartLevel] d.c.r.c.i.ControllerResourceRegistryImpl [ControllerResourceRegistryImpl.java:118] deploying controller de.cybercon.rest.swagger.resource.DocumentationResource
+2016-06-30 11:48:39,325 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:205] deploying controller de.cybercon.rest.swagger.resource.DocumentationResource
+2016-06-30 11:48:39,325 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:302] creating atom link injectors from de.cybercon.rest.swagger.resource.DocumentationResource
+2016-06-30 11:48:39,337 INFO [FelixStartLevel] d.c.r.c.i.ControllerResourceRegistryImpl [ControllerResourceRegistryImpl.java:118] deploying controller de.cybercon.rest.mail.resources.MailResource
+2016-06-30 11:48:39,338 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:205] deploying controller de.cybercon.rest.mail.resources.MailResource
+2016-06-30 11:48:39,338 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:302] creating atom link injectors from de.cybercon.rest.mail.resources.MailResource
+2016-06-30 11:48:39,794 INFO [Thread-14] d.c.d.r.j.b.JettyBridge [JettyBridge.java:78] stopping jetty
+2016-06-30 11:48:39,798 INFO [Thread-14] o.e.j.s.ServerConnector [AbstractConnector.java:306] Stopped ServerConnector@5ac41557{HTTP/1.1}{0.0.0.0:8081}
+2016-06-30 11:48:39,798 INFO [Thread-14] o.e.j.s.ServerConnector [AbstractConnector.java:306] Stopped ServerConnector@6af836ee{SSL-http/1.1}{0.0.0.0:8443}
+2016-06-30 11:48:39,807 INFO [Thread-14] o.e.j.s.h.ContextHandler [ContextHandler.java:865] Stopped o.e.j.s.ServletContextHandler@33dff71c{/,null,UNAVAILABLE}
+2016-06-30 11:48:39,808 INFO [Thread-14] d.c.d.r.j.b.JettyBridge [JettyBridge.java:70] stopped jetty
+2016-06-30 11:48:55,332 INFO [FelixStartLevel] o.e.j.u.log [Log.java:186] Logging initialized @5584ms
+2016-06-30 11:48:55,345 INFO [FelixStartLevel] o.e.j.o.b.i.s.DefaultJettyAtJettyHomeHelper [DefaultJettyAtJettyHomeHelper.java:159] Configuring the default jetty server with [file:/Users/thomas/dev/cybercon-applications/app-provisioning/src/test/resources/testproject/target/app-start/jettyhome/etc/jetty.xml, file:/Users/thomas/dev/cybercon-applications/app-provisioning/src/test/resources/testproject/target/app-start/jettyhome/etc/jetty-selector.xml, file:/Users/thomas/dev/cybercon-applications/app-provisioning/src/test/resources/testproject/target/app-start/jettyhome/etc/jetty-deployer.xml, file:/Users/thomas/dev/cybercon-applications/app-provisioning/src/test/resources/testproject/target/app-start/jettyhome/etc/jetty-ssl.xml, file:/Users/thomas/dev/cybercon-applications/app-provisioning/src/test/resources/testproject/target/app-start/jettyhome/etc/jetty-https.xml]
+2016-06-30 11:48:55,345 INFO [FelixStartLevel] o.e.j.o.b.i.s.DefaultJettyAtJettyHomeHelper [DefaultJettyAtJettyHomeHelper.java:160] JETTY.HOME=/Users/thomas/dev/cybercon-applications/app-provisioning/src/test/resources/testproject/target/app-start/jettyhome
+2016-06-30 11:48:55,487 INFO [FelixStartLevel] o.e.j.s.Server [Server.java:327] jetty-9.2.13.v20150730
+2016-06-30 11:48:55,502 INFO [FelixStartLevel] o.e.j.s.AbstractNCSARequestLog [NCSARequestLog.java:230] Opened /Users/thomas/dev/cybercon-applications/app-provisioning/src/test/resources/testproject/target/app-start/log/jetty/2016_06_30.request.log
+2016-06-30 11:48:55,536 INFO [FelixStartLevel] o.e.j.s.ServerConnector [AbstractConnector.java:266] Started ServerConnector@35b14a6b{HTTP/1.1}{0.0.0.0:8081}
+2016-06-30 11:48:55,808 INFO [FelixStartLevel] o.e.j.s.ServerConnector [AbstractConnector.java:266] Started ServerConnector@4d088ab1{SSL-http/1.1}{0.0.0.0:8443}
+2016-06-30 11:48:55,808 INFO [FelixStartLevel] o.e.j.s.Server [Server.java:379] Started @6062ms
+2016-06-30 11:48:55,809 INFO [FelixStartLevel] o.e.j.o.b.i.s.DefaultJettyAtJettyHomeHelper [DefaultJettyAtJettyHomeHelper.java:180] Default jetty server configured
+2016-06-30 11:48:55,898 INFO [FelixStartLevel] o.e.j.s.h.ContextHandler [ContextHandler.java:744] Started o.e.j.s.ServletContextHandler@71132b25{/,null,AVAILABLE}
+2016-06-30 11:48:56,003 INFO [FelixStartLevel] d.c.c.o.c.SecuredPersistenceManagerImpl [SecuredPersistenceManagerImpl.java:83] init of SecuredPersistenceManagerImpl in location /Users/thomas/dev/cybercon-applications/app-provisioning/src/test/resources/testproject/target/app-start/felix-cache/bundle72/data/config
+2016-06-30 11:48:56,214 INFO [FelixStartLevel] d.c.c.b.i.ActivitiEngineProvider [ActivitiEngineProvider.java:485] activating process engine provider
+2016-06-30 11:48:56,216 INFO [FelixStartLevel] d.c.c.b.i.ActivitiEngineProvider [ActivitiEngineProvider.java:498] activated process engine provider
+2016-06-30 11:48:56,436 INFO [FelixStartLevel] d.c.c.b.d.i.BusinessProcessDataStoreFactoryImpl [BusinessProcessDataStoreFactoryImpl.java:199] creating a business process data store for 'store', because there was a new datastore in the application.
+2016-06-30 11:48:56,458 INFO [FelixStartLevel] d.c.c.d.DataSourcePoolImpl [DataSourcePoolImpl.java:232] found jdbc driver org.postgresql.Driver in version 9.4.0.build-1201
+2016-06-30 11:48:56,458 INFO [FelixStartLevel] d.c.c.d.DataSourcePoolImpl [DataSourcePoolImpl.java:232] found jdbc driver org.postgresql.Driver in version 9.3.0.1103
+2016-06-30 11:48:56,459 INFO [FelixStartLevel] d.c.c.d.DataSourcePoolImpl [DataSourcePoolImpl.java:232] found jdbc driver org.h2.Driver in version 1.4.178
+2016-06-30 11:48:56,459 INFO [FelixStartLevel] d.c.c.d.DataSourcePoolImpl [DataSourcePoolImpl.java:232] found jdbc driver com.mysql.jdbc.Driver in version 5.1.30
+2016-06-30 11:48:56,459 INFO [FelixStartLevel] d.c.c.d.DataSourcePoolImpl [DataSourcePoolImpl.java:232] found jdbc driver com.mysql.fabric.jdbc.FabricMySQLDriver in version 5.1.30
+2016-06-30 11:48:56,462 WARN [FelixStartLevel] d.c.c.d.DataSourcePoolImpl [DataSourcePoolImpl.java:180] no driverClass defined for datasource datasource
+2016-06-30 11:48:57,271 INFO [FelixStartLevel] d.c.r.c.i.ControllerResourceRegistryImpl [ControllerResourceRegistryImpl.java:118] deploying controller de.cybercon.rest.data.resources.DataResource
+2016-06-30 11:48:57,295 INFO [FelixStartLevel] d.c.r.c.i.ControllerResourceRegistryImpl [ControllerResourceRegistryImpl.java:118] deploying controller de.cybercon.rest.bpm.resources.BusinessProcessDefinitionResource
+2016-06-30 11:48:57,302 INFO [FelixStartLevel] d.c.r.c.i.ControllerResourceRegistryImpl [ControllerResourceRegistryImpl.java:118] deploying controller de.cybercon.rest.bpm.resources.BusinessProcessInstanceResource
+2016-06-30 11:48:57,308 INFO [FelixStartLevel] d.c.r.c.i.ControllerResourceRegistryImpl [ControllerResourceRegistryImpl.java:118] deploying controller de.cybercon.rest.cache.resources.CacheResource
+2016-06-30 11:48:57,332 INFO [FelixStartLevel] d.c.r.c.i.ControllerResourceRegistryImpl [ControllerResourceRegistryImpl.java:118] deploying controller de.cybercon.rest.schema.resources.SchemaResource
+2016-06-30 11:48:57,710 INFO [FelixStartLevel] d.c.r.d.CommunicationDescriptionProviderImpl [CommunicationDescriptionProviderImpl.java:235] activating communication description provider
+2016-06-30 11:48:57,711 INFO [FelixStartLevel] d.c.r.d.CommunicationDescriptionProviderImpl [CommunicationDescriptionProviderImpl.java:236] activated communication description provider
+2016-06-30 11:48:57,720 INFO [FelixStartLevel] d.c.r.c.i.ControllerResourceRegistryImpl [ControllerResourceRegistryImpl.java:118] deploying controller de.cybercon.rest.root.controller.RootResourceImpl
+2016-06-30 11:48:57,725 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:302] creating atom link injectors from de.cybercon.rest.data.resources.DataResource
+2016-06-30 11:48:57,755 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:302] creating atom link injectors from de.cybercon.rest.bpm.resources.BusinessProcessDefinitionResource
+2016-06-30 11:48:57,757 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:302] creating atom link injectors from de.cybercon.rest.bpm.resources.BusinessProcessInstanceResource
+2016-06-30 11:48:57,759 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:302] creating atom link injectors from de.cybercon.rest.cache.resources.CacheResource
+2016-06-30 11:48:57,761 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:302] creating atom link injectors from de.cybercon.rest.schema.resources.SchemaResource
+2016-06-30 11:48:57,763 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:302] creating atom link injectors from de.cybercon.rest.root.controller.RootResourceImpl
+2016-06-30 11:48:57,805 INFO [FelixStartLevel] d.c.r.c.i.ControllerResourceRegistryImpl [ControllerResourceRegistryImpl.java:118] deploying controller de.cybercon.rest.swagger.resource.SwaggerResource
+2016-06-30 11:48:57,809 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:205] deploying controller de.cybercon.rest.swagger.resource.SwaggerResource
+2016-06-30 11:48:57,809 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:302] creating atom link injectors from de.cybercon.rest.swagger.resource.SwaggerResource
+2016-06-30 11:48:57,856 INFO [FelixStartLevel] d.c.r.i.ResourceDelegatingServlet [ResourceDelegatingServlet.java:247] Starting resource delegating servlet
+2016-06-30 11:48:57,856 INFO [FelixStartLevel] d.c.d.r.j.b.JettyBridge [JettyBridge.java:144] DEPLOYING SERVLET: /cybercon de.cybercon.rest.impl.ResourceDelegatingServlet
+2016-06-30 11:48:57,859 INFO [FelixStartLevel] o.e.j.s.h.ContextHandler [ContextHandler.java:744] Started o.e.j.s.ServletContextHandler@64bd2712{/cybercon,null,AVAILABLE}
+2016-06-30 11:48:57,860 INFO [FelixStartLevel] d.c.r.i.ResourceDelegatingServlet [ResourceDelegatingServlet.java:251] Started resource delegating servlet
+2016-06-30 11:48:57,886 INFO [FelixStartLevel] d.c.d.r.j.b.JettyBridge [JettyBridge.java:144] DEPLOYING SERVLET: /websocket de.cybercon.de.rest.websocket.server.impl.WebsocketRegistryImpl$1
+2016-06-30 11:48:57,908 INFO [FelixStartLevel] o.e.j.s.h.ContextHandler [ContextHandler.java:744] Started o.e.j.s.ServletContextHandler@29b0fefb{/websocket,null,AVAILABLE}
+2016-06-30 11:48:58,135 INFO [FelixStartLevel] d.c.s.i.f.EngineFactoryImpl [EngineFactoryImpl.java:306] Schema implementation licensed to SWYP
+2016-06-30 11:48:58,195 INFO [FelixStartLevel] d.c.s.i.SearchServiceImpl [SearchServiceImpl.java:51] activating search service
+2016-06-30 11:48:58,196 INFO [FelixStartLevel] d.c.s.i.SearchServiceImpl [SearchServiceImpl.java:54] activated search service. tracking solr servers now
+2016-06-30 11:48:58,201 INFO [FelixStartLevel] d.c.r.c.i.ControllerResourceRegistryImpl [ControllerResourceRegistryImpl.java:118] deploying controller de.cybercon.rest.search.resources.SearchResource
+2016-06-30 11:48:58,203 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:205] deploying controller de.cybercon.rest.search.resources.SearchResource
+2016-06-30 11:48:58,203 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:302] creating atom link injectors from de.cybercon.rest.search.resources.SearchResource
+2016-06-30 11:48:58,493 INFO [FelixStartLevel] d.c.r.c.i.ControllerResourceRegistryImpl [ControllerResourceRegistryImpl.java:118] deploying controller de.cybercon.rest.swagger.resource.DocumentationResource
+2016-06-30 11:48:58,494 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:205] deploying controller de.cybercon.rest.swagger.resource.DocumentationResource
+2016-06-30 11:48:58,494 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:302] creating atom link injectors from de.cybercon.rest.swagger.resource.DocumentationResource
+2016-06-30 11:48:58,510 INFO [FelixStartLevel] d.c.r.c.i.ControllerResourceRegistryImpl [ControllerResourceRegistryImpl.java:118] deploying controller de.cybercon.rest.mail.resources.MailResource
+2016-06-30 11:48:58,513 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:205] deploying controller de.cybercon.rest.mail.resources.MailResource
+2016-06-30 11:48:58,513 INFO [FelixStartLevel] d.c.r.a.i.AtomLinkInjectorImpl [AtomLinkInjectorImpl.java:302] creating atom link injectors from de.cybercon.rest.mail.resources.MailResource
+2016-06-30 11:48:59,062 INFO [Thread-14] d.c.d.r.j.b.JettyBridge [JettyBridge.java:78] stopping jetty
+2016-06-30 11:48:59,069 INFO [Thread-14] o.e.j.s.ServerConnector [AbstractConnector.java:306] Stopped ServerConnector@35b14a6b{HTTP/1.1}{0.0.0.0:8081}
+2016-06-30 11:48:59,070 INFO [Thread-14] o.e.j.s.ServerConnector [AbstractConnector.java:306] Stopped ServerConnector@4d088ab1{SSL-http/1.1}{0.0.0.0:8443}
+2016-06-30 11:48:59,082 INFO [Thread-14] o.e.j.s.h.ContextHandler [ContextHandler.java:865] Stopped o.e.j.s.ServletContextHandler@71132b25{/,null,UNAVAILABLE}
+2016-06-30 11:48:59,093 INFO [Thread-14] d.c.d.r.j.b.JettyBridge [JettyBridge.java:70] stopped jetty

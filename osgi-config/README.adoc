@@ -1,0 +1,3 @@
+= Bndly commons osgi-config
+
+A library to provide different possibilities to handle Osgi configurations

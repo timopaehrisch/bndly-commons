@@ -1,0 +1,3 @@
+= Bndly commons app-provisioning
+
+This module contains code to read and install provisionig files which have a similar style like slingosgifeature.

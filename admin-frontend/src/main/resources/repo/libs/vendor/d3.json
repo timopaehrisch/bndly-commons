@@ -1,0 +1,1 @@
+{"type":"cy:bean","properties":{"beanType@STRING":"cy:requiremodule","name@STRING":"d3","script@STRING":"","initMethod@STRING":"","proxy@STRING":"/repo/libs/vendor/bin/d3/d3.v3.min","moduleId@STRING":"d3","export@STRING":"d3"}}

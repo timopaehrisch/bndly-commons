@@ -1,0 +1,3 @@
+= Bndly commons admin
+
+This bundle contains a frontend for JBundly schema based on hogan d3 and bootstrap

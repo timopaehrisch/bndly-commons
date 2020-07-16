@@ -12,7 +12,7 @@
   <groupId>org.bndly.common.schema</groupId>
   <artifactId>org.bndly.common.schema.schema</artifactId>
   <packaging>pom</packaging>
-  <name>Schema</name>
+  <name>Bndly commons Schema</name>
 
   <modules>
     <module>model</module>

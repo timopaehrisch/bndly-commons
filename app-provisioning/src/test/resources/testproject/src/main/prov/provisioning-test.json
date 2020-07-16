@@ -1,0 +1,17 @@
+{
+	"test": {
+		"bundles": {
+			"1": [
+				"org.slf4j:slf4j-api:jar:${slf4j.version}"
+			]
+		},
+		"configs": {
+			"com.acme.Component": {
+				"foo": "bar",
+				"replaced": "${home}",
+				"replaced2": "${inlineJson}",
+				"replaced3": "${windows}"
+			}
+		}
+	}
+}

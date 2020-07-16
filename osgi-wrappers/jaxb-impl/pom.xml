@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.sun.xml.bind</groupId>
+	<artifactId>com.sun.xml.bind.jaxb-impl</artifactId>
+	<version>2.3.2</version>
+	<packaging>bundle</packaging>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.sun.xml.bind</groupId>
+			<artifactId>jaxb-core</artifactId>
+			<version>2.3.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.xml.bind</groupId>
+			<artifactId>jaxb-impl</artifactId>
+			<version>2.3.2</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<version>4.2.0</version>
+				<extensions>true</extensions>
+				<executions>
+					<execution>
+						<id>scr-metadata</id>
+						<goals>
+							<goal>manifest</goal>
+						</goals>
+						<configuration>
+							<supportIncrementalBuild>true</supportIncrementalBuild>
+						</configuration>
+					</execution>
+				</executions>
+				<configuration>
+					<exportScr>true</exportScr>
+					<instructions>
+						<Include-Resources>{maven-resources},</Include-Resources>
+						<_fixupmessages>"Classes found in the wrong directory:";is:=warning</_fixupmessages>
+						<Embed-Dependency>*;inline=true;groupId=com.sun.xml.bind</Embed-Dependency>
+						<Import-Package>
+							!com.sun.xml.fastinfoset.sax,
+							!com.sun.xml.fastinfoset.stax,
+							!org.jvnet.fastinfoset,
+							!org.jvnet.fastinfoset.stax,
+							!org.jvnet.staxex,
+							<!-- we manually set the version ranges here, because we want to be sure, that in Java 8 we load the packages not from JRE system bundle, but from the jaxb-api bundle-->
+							javax.xml.bind;version="[2.3, 3)",
+							javax.xml.bind.annotation;version="[2.3, 3)",
+							javax.xml.bind.annotation.adapters;version="[2.3, 3)",
+							javax.xml.bind.attachment;version="[2.3, 3)",
+							javax.xml.bind.helpers;version="[2.3, 3)",
+							*</Import-Package>
+						<_exportcontents>*</_exportcontents>
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

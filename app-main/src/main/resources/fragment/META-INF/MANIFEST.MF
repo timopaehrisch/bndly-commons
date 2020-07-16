@@ -1,0 +1,6 @@
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.bndly.common.jaxbfragment
+Bundle-Version: 0.0.1
+Fragment-Host: system.bundle; extension:=framework
+Bundle-Name: Bndly JAXB Fragment
+Bundle-Description: Bundle that adds a SPI based JAXBContext factory

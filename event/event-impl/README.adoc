@@ -1,0 +1,3 @@
+= Bndly commons event-impl
+
+The implementation of the event module

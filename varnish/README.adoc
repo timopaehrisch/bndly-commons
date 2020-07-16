@@ -1,0 +1,3 @@
+= Bndly commons varnish
+
+A service to handle cache invalidation of a varnish cache

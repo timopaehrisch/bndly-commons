@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.postgresql</groupId>
+	<artifactId>postgresql-osgi</artifactId>
+	<version>9.3-1103-SNAPSHOT</version>
+	<packaging>bundle</packaging>
+	<name>Postgres JDBC 9.3 OSGI</name>
+
+	<properties>
+		<postgres93.short.version>9.3</postgres93.short.version>
+		<postgres93.bundle.version>9.3-1103</postgres93.bundle.version>
+		<postgres93.version>9.3-1103-jdbc41</postgres93.version>
+	</properties>
+	
+	<dependencies>
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>${postgres93.version}</version>
+			<scope>runtime</scope>
+		</dependency>
+	</dependencies>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>copy-dependencies</id>
+						<phase>generate-resources</phase>
+						<goals>
+							<goal>unpack-dependencies</goal>
+						</goals>
+						<configuration>
+							<excludeGroupIds>org.apache.felix</excludeGroupIds>
+							<excludeTransitive>true</excludeTransitive>
+							<outputDirectory>${project.build.directory}/classes</outputDirectory>
+							<excludes>META-INF\/MANIFEST.MF</excludes>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<version>2.4.0</version>
+				<extensions>true</extensions>
+				<configuration>
+					<instructions>
+						<Bundle-Version>${postgres93.bundle.version}</Bundle-Version>
+						<Export-Package>
+							org.postgresql;version="${postgres93.short.version}",
+							org.postgresql.largeobject;version="${postgres93.short.version}",
+							org.postgresql.core;version="${postgres93.short.version}",
+							org.postgresql.fastpath;version="${postgres93.short.version}",
+							org.postgresql.util;version="${postgres93.short.version}",
+							org.postgresql.jdbc2;version="${postgres93.short.version}",
+							org.postgresql.copy;version="${postgres93.short.version}"
+						</Export-Package>
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

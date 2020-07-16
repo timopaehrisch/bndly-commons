@@ -1,0 +1,16 @@
+<h5>Glossary</h5>
+<div class="list-group">
+	<a class="list-group-item" href="#Bundle">Bundle</a>
+	<a class="list-group-item" href="#Controller">Controller</a>
+	<a class="list-group-item" href="#Entity">Entity</a>
+	<a class="list-group-item" href="#HATEOAS">HATEOAS</a>
+	<a class="list-group-item" href="#HTTP">HTTP</a>
+	<a class="list-group-item" href="#JAXB">JAXB</a>
+	<a class="list-group-item" href="#Message">Message</a>
+	<a class="list-group-item" href="#OSGI">OSGI</a>
+	<a class="list-group-item" href="#Ressource">Ressource</a>
+	<a class="list-group-item" href="#RESTBean">REST Bean</a>
+	<a class="list-group-item" href="#REST">REST</a>
+	<a class="list-group-item" href="#Schema">Schema</a>
+	<a class="list-group-item" href="#SmartReference">Smart Reference</a>
+</div>

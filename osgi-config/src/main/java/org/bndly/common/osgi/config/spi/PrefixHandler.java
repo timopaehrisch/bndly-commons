@@ -1,0 +1,50 @@
+package org.bndly.common.osgi.config.spi;
+
+/*-
+ * #%L
+ * OSGI Config
+ * %%
+ * Copyright (C) 2013 - 2020 Cybercon GmbH
+ * %%
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * #L%
+ */
+
+/**
+ * A prefix handler has the responsibility to convert between plain text and obfuscated/encrypted text.
+ * In order to distinguish prefix handlers, they have a prefix name.
+ * This prefix should be capital case and should only contain the characters in the range of A-Z.
+ * @author cybercon &lt;bndly@cybercon.de&gt;
+ */
+public interface PrefixHandler {
+	
+	/**
+	 * Returns the prefix name. Values should only contain characters in the range of A-Z.
+	 * @return prefix name
+	 */
+	String getPrefix();
+	
+	/**
+	 * This method converts a plain text to an obfuscated or encrypted text.
+	 * @param rawStringValue the text to obfuscate or encrypt.
+	 * @return the obfuscated or encrypted text
+	 */
+	String get(String rawStringValue);
+	
+	/**
+	 * This method converts an obfuscated or encrypted text to a plain text.
+	 * @param obfuscatedOrEncryptedValue the obfuscated or encrypted text
+	 * @return the recovered plain text
+	 */
+	String set(String obfuscatedOrEncryptedValue);
+}

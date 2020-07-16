@@ -1,0 +1,9 @@
+#if($bundleDocumentationProvider)
+<h2>Bundle documentation</h2>
+#foreach($bundleDocumentation in $bundleDocumentationProvider.availableBundleDocumentation)
+	<span id="bundle_${bundleDocumentation.bundle.bundleId}"></span>
+	#foreach($markdownEntry in $bundleDocumentation.markdownEntries)
+		${markdownEntry.renderedMarkdown}
+	#end
+#end
+#end

@@ -1,0 +1,3 @@
+= Bndly commons ical
+
+A library for dealing with ical (Calendar) data

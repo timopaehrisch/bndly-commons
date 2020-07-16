@@ -1,0 +1,3 @@
+= Bndly commons runmode
+
+Support for OSGI runmodes

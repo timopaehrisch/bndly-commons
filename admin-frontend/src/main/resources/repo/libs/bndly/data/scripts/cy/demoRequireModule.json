@@ -1,0 +1,1 @@
+{"type":"cy:bean","properties":{"beanType@STRING":"cy:requiremodule","name@STRING":"Demo","script@STRING":"return {\r\n  foo: \"bar\",\r\n  init: function(){\r\n    console.log(\"init demo module\");\r\n  }\r\n};","initMethod@STRING":"init"}}

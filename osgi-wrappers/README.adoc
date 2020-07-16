@@ -1,0 +1,3 @@
+= Bndly commons osgi-wrappers
+
+Wrapper projects to create bundles out of plain jars for specific 3rd-party projects

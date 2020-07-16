@@ -1,0 +1,3 @@
+= Bndly commons event
+
+A module to send and receive events (like user logged in, application started)

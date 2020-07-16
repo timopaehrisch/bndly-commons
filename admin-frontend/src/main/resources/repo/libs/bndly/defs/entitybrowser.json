@@ -1,0 +1,1 @@
+{"type":"cy:beanDef","properties":{"name@STRING":"cy:entitybrowser"},"children":{"entity":{},"title":{},"search":{},"entityfields":{},"script":{},"referenceRestBean":{},"restBean":{},"listRestBean":{},"newItemTitle":{},"existingItemTitle":{}}}

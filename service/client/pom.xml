@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ~ Copyright (c) 2011, cyber:con GmbH, Bonn. ~ ~ All rights reserved. 
+This source file is provided to you for ~ documentation purposes only. No 
+part of this file may be ~ reproduced or copied in any form without the written 
+~ permission of cyber:con GmbH. No liability can be accepted ~ for errors 
+in the program or in the documentation or for damages ~ which arise through 
+using the program. If an error is discovered, ~ cyber:con GmbH will endeavour 
+to correct it as quickly as possible. ~ The use of the program occurs exclusively 
+under the conditions ~ of the licence contract with cyber:con GmbH. -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.bndly.common.service</groupId>
+    <artifactId>org.bndly.common.service.service</artifactId>
+    <version>${revision}${changelist}</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>org.bndly.common.service.client</artifactId>
+  <packaging>bundle</packaging>
+  <name>Bndly commons Service Client</name>
+
+  <distributionManagement>
+    <repository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+    <snapshotRepository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.bndly.common.rest</groupId>
+      <artifactId>org.bndly.common.rest.annotations</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.bndly.common.rest</groupId>
+      <artifactId>org.bndly.common.rest.beans</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.bndly.common.rest</groupId>
+      <artifactId>org.bndly.common.rest.client-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.bndly.common.rest</groupId>
+      <artifactId>org.bndly.common.rest.schema-resource-beans</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.bndly.common.service</groupId>
+      <artifactId>org.bndly.common.service.validation-rules-beans</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.bndly.common.service</groupId>
+      <artifactId>org.bndly.common.service.validation-rules-interpreter</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+</project>

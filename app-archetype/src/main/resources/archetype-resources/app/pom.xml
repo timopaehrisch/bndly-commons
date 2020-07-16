@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<!--
+  #%L
+  App Archetype
+  %%
+  Copyright (C) 2013 - 2020 Cybercon GmbH
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+       http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>${groupId}</groupId>
+		<artifactId>${groupId}.${artifactId}</artifactId>
+		<version>${version}</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+	<groupId>${groupId}.${artifactId}</groupId>
+	<artifactId>${groupId}.${artifactId}.app</artifactId>
+	<packaging>pom</packaging>
+	<name>App</name>
+	<url>http://www.cybercon.de</url>
+	<dependencies>
+		<!--the app container has all the shared libraries-->
+		<dependency>
+			<groupId>org.bndly.common</groupId>
+			<artifactId>org.bndly.common.app-container</artifactId>
+			<type>zip</type>
+			<scope>runtime</scope>
+		</dependency>
+		<!--here is all the ${artifactId} specific lib-->
+		<dependency>
+			<groupId>${groupId}.${artifactId}</groupId>
+			<artifactId>${groupId}.${artifactId}.schema-beans</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>${groupId}.${artifactId}</groupId>
+			<artifactId>${groupId}.${artifactId}.schema-rest-beans</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>1.4.190</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<finalName>${artifactId}-app-container-${project.version}</finalName>
+		<plugins>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>2.4.1</version>
+				<executions>
+					<execution>
+						<id>distro-assembly</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+						<configuration>
+							<appendAssemblyId>false</appendAssemblyId>
+							<descriptors>
+								<descriptor>src/assembly/bin.xml</descriptor>
+							</descriptors>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+	<profiles>
+		<profile>
+			<id>local</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+				<bndly.common.config>${user.home}/.${artifactId}</bndly.common.config>
+			</properties>
+		</profile>
+	</profiles>
+</project>

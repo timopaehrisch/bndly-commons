@@ -1,0 +1,3 @@
+= Bndly commons ical-api
+
+The api for dealing with ical (Calendar) data

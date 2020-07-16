@@ -1,0 +1,1 @@
+{"type":"cy:bean","properties":{"content@STRING":"alert(\"hello world\");","beanType@STRING":"cy:script"}}

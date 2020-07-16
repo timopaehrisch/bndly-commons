@@ -1,0 +1,3 @@
+= Bndly commons ip2location
+
+Provides a service to handle geolocation based on ip adresses

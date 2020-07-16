@@ -1,0 +1,3 @@
+= Bndly commons ssl ssl-api
+
+The api for the httpsclient

@@ -1,0 +1,3 @@
+= Bndly commons app-container-common
+
+This module contains configuration for an Apache Felix (without Sling) based Bndly application

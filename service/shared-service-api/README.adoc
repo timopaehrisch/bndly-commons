@@ -1,0 +1,2 @@
+= Bndly commons service shared-service-api
+

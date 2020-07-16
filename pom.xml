@@ -24,28 +24,47 @@
 
   <modules>
     <module>3rd-party-bom</module>
+    <module>admin-frontend</module>
+    <module>antivirus</module>
+    <module>app-archetype</module>
+    <module>app-container-common</module>
+    <module>app-main</module>
+    <module>app-provisioning</module>
+    <module>classpath</module>
     <module>bom</module>
     <module>cors</module>
     <module>cors-default-filter</module>
-    <module>antivirus</module>
+    <module>crypto</module>
+    <module>csv</module>
     <module>bpm</module>
     <module>code</module>
     <module>converter</module>
-    <module>crypto</module>
     <module>data</module>
     <module>datasource</module>
+    <module>documentation</module>
+    <module>event</module>
     <module>graph</module>
+    <module>html</module>
+    <module>ical</module>
+    <module>ip2location</module>
     <module>json</module>
     <module>lang</module>
     <module>mail</module>
     <module>mapper</module>
     <module>osgi</module>
+    <module>osgi-config</module>
+    <module>osgi-executor-services</module>
+    <module>osgi-jmx</module>
     <module>pdf</module>
     <module>reflection</module>
     <module>rest</module>
+    <module>runmode</module>
     <module>schema</module>
     <module>search</module>
+    <module>service</module>
+    <module>ssl</module>
     <module>templating</module>
+    <module>varnish</module>
   </modules>
 
   <scm>

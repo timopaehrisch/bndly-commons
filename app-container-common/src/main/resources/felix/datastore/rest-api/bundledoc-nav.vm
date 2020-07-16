@@ -1,0 +1,12 @@
+#if($bundleDocumentationProvider)
+	<h5>Bundle documentation</h5>
+	<div class="list-group">
+	#foreach($bundleDocumentation in $bundleDocumentationProvider.availableBundleDocumentation)
+		#set($bundleName = $bundleDocumentation.bundle.headers["Bundle-Name"])
+		#if(!$bundleName)
+			#set($bundleName = $bundleDocumentation.bundle.symbolicName)
+		#end
+		<a class="list-group-item" href="#bundle_${bundleDocumentation.bundle.bundleId}">${bundleName}</a>
+	#end
+	</div>
+#end

@@ -1,0 +1,13 @@
+<div class="panel panel-warning">
+	<div class="panel-heading">
+		<h3 class="panel-title">Warning!</h3>
+	</div>
+	<div class="panel-body">
+		<p>
+		Using the $swaggerDocument.info.title by building URLs on the client side is against its design philosophy. Any URL in the $swaggerDocument.info.title can be changed by bndly due to maintenance or upgrades.
+		</p>
+		<p>
+		The $swaggerDocument.info.title REST API was designed to be used by inspecting the Atom Links in the provided messages. Those Atom Links will appear in the following XSDs as the atomLink element. They can be injected by the $swaggerDocument.info.title in any subtype of RestBean. All Entities have a RestBean subtype, which allows injection of links into entity messages in order to drive the client through the REST API.
+		</p>
+	</div>
+</div>

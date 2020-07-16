@@ -1,0 +1,3 @@
+= Bndly commons csv
+
+A simple CSV parsing module, that can be used to read a CSV inputstream or provide a CSV outputstream.

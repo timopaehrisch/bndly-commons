@@ -1,0 +1,1 @@
+{"type":"cy:bean","properties":{"beanType@STRING":"cy:requiremodule","name@STRING":"bootstrap","script@STRING":"","initMethod@STRING":"","proxy@STRING":"/repo/libs/vendor/bin/bootstrap/js/bootstrap.min","moduleId@STRING":"bootstrap","dependencies@STRING":["/libs/vendor/jquery"],"export@STRING":""}}

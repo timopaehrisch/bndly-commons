@@ -1,0 +1,3 @@
+= Bndly commons app-main
+
+This module contains startup code for an Apache Felix based Bndly application

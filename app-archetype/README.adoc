@@ -1,0 +1,3 @@
+= Bndly commons app-archetype
+
+A maven archetpy for creating a new Bundly application

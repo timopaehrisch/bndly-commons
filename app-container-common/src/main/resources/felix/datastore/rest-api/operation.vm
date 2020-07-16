@@ -1,0 +1,94 @@
+#if ($model.tags)
+	<p>
+	<i class="icon-tags"></i>
+	#set( $firstTag = true )
+	#foreach ( $tag in $model.tags)
+	#if ($firstTag)
+		#set( $firstTag = false )
+		<a href="#tag_$tag">$tag</a>
+	#else
+		, <a href="#tag_$tag">$tag</a>
+	#end
+	#end
+	</p>
+#end
+
+#if ($model.produces)
+	<p>
+	<i class="icon-file"></i>
+	<span>Produces: </span>
+	#set( $firstContentType = true )
+	#foreach ( $contentType in $model.produces)
+	#if ($firstContentType)
+		#set( $firstContentType = false )
+		$contentType
+	#else
+		, $contentType
+	#end
+	#end
+	</p>
+#end
+
+#if ($model.consumes)
+	<p>
+	<i class="icon-file"></i>
+	<span>Consumes: </span>
+	#set( $firstContentType = true )
+	#foreach ( $contentType in $model.consumes)
+	#if ($firstContentType)
+		#set( $firstContentType = false )
+		$contentType
+	#else
+		, $contentType
+	#end
+	#end
+	</p>
+#end
+
+#if ($model.parameters)
+	<h5>Parameters</h5>
+<dl class="dl-horizontal">
+	#foreach ( $parameter in $model.parameters)
+  <dt><code>$parameter.name</code></dt>
+  <dd>
+		#if ($parameter.required)<span class="label label-warning">Required!</span>#end
+		#set($location = $parameter.in)
+		#if ($location == 'query')Appears in the query parameters. #end
+		#if ($location == 'path')Appears as a replacement for {$parameter.name} in the URL. #end
+		#if ($location == 'body')Appears as the request payload in a consumable format.#end
+		#if ($parameter.description)$parameter.description#end
+		#if ($parameter.schema.referencedElementName)<a class="btn btn-sm btn-primary" href="$parameter.schema.referencedElementName">Go to XSD</a>#end
+		#if ($parameter.schema.externalDocumentation)
+		<a href="$parameter.schema.externalDocumentation.url" class="btn btn-sm btn-primary">$parameter.schema.externalDocumentation.description</a>
+		#end
+	</dd>
+	#end
+</dl>
+#end
+
+#if ($model.responses)
+	<h5>Responses</h5>
+<dl class="dl-horizontal">
+	#foreach ( $code in $model.responses.keySet())
+	#set($response = $model.responses.get($code))
+  <dt><code>$code</code></dt>
+  <dd>
+	#if ($response.description)$response.description#end
+	#if ($response.schema)
+		#if ($response.schema.referencedElementName)<a class="btn btn-sm btn-primary" href="$response.schema.referencedElementName">Go to XSD</a>#end
+	#end
+	
+	</dd>
+	#end
+</dl>
+#end
+
+<blockquote>
+  <p>$model.description</p>
+	#if ($model.summary)
+		<small>$model.summary</small>
+	#end
+</blockquote>
+#if ($model.externalDocs)
+	<a href="$model.externalDocs.url">$model.externalDocs.description</a>
+#end

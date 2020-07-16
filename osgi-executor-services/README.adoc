@@ -1,0 +1,3 @@
+= Bndly commons osgi-executor-service
+
+A simple service to call OSGI service methods by configurable timer

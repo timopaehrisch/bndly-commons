@@ -1,0 +1,3 @@
+= Bndly commons osgi-jmx
+
+A module to register OSGI services as jmx mbeans.
