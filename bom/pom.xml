@@ -4,7 +4,7 @@
 
 	<groupId>org.bndly.common</groupId>
 	<artifactId>org.bndly.common.applications-bom</artifactId>
-	<version>${revision}${changelist}</version>
+	<version>1.0.0</version>
 	<packaging>pom</packaging>
 	<name>Bndly Application BOM</name>
 	<inceptionYear>2013</inceptionYear>
@@ -25,7 +25,7 @@
 	<scm>
 		<connection>scm:git:git@github.com:bndly/bndly-commons.git</connection>
 		<url>https://github.com/bndly/bndly-commons.git</url>
-		<tag>v5.0.0</tag>
+		<tag>v1.0.0</tag>
 	</scm>
 
 	  <distributionManagement>
