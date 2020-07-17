@@ -4,7 +4,7 @@
 
 	<groupId>org.bndly.common</groupId>
 	<artifactId>org.bndly.common.applications-bom</artifactId>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>${revision}${changelist}</version>
 	<packaging>pom</packaging>
 	<name>Bndly Application BOM</name>
 	<inceptionYear>2013</inceptionYear>
