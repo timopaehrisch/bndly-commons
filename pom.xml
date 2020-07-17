@@ -9,6 +9,19 @@
 
   <name>Bndly Applications</name>
 
+  <description>A collection of OSGI bundles as maven projects to build a foundation for bndly-features</description>
+
+  <developers>
+    <developer>
+      <name>bndly</name>
+      <organization>bndly.org</organization>
+      <email>bndly@cybercon.de</email>
+      <organizationUrl>https://www.bndly.org</organizationUrl>
+    </developer>
+  </developers>
+
+  <url>https://www.bndly.org</url>
+
   <organization>
     <name>Cybercon GmbH</name>
     <url>http://www.cybercon.de</url>
@@ -69,7 +82,7 @@
 
   <scm>
     <connection>scm:git:git@github.com:bndly/bndly-commons.git</connection>
-    <tag>v5.0.0</tag>
+    <tag>v1.0.0</tag>
     <url>https://github.com/bndly/bndly-commons.git</url>
   </scm>
 
