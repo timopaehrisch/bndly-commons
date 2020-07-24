@@ -64,6 +64,7 @@
     <module>service</module>
     <module>ssl</module>
     <module>templating</module>
+    <module>testfixture</module>
     <module>varnish</module>
   </modules>
 
