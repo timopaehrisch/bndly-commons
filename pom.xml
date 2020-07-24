@@ -11,15 +11,6 @@
 
   <description>A collection of OSGI bundles as maven projects to build a foundation for bndly-features</description>
 
-  <developers>
-    <developer>
-      <name>bndly</name>
-      <organization>bndly.org</organization>
-      <email>bndly@cybercon.de</email>
-      <organizationUrl>https://www.bndly.org</organizationUrl>
-    </developer>
-  </developers>
-
   <url>https://www.bndly.org</url>
 
   <organization>
@@ -34,6 +25,15 @@
       <distribution>repo</distribution>
     </license>
   </licenses>
+
+  <developers>
+    <developer>
+      <name>bndly</name>
+      <email>bndly@cybercon.de</email>
+      <organization>bndly.org</organization>
+      <organizationUrl>https://www.bndly.org</organizationUrl>
+    </developer>
+  </developers>
 
   <modules>
     <module>3rd-party-bom</module>
