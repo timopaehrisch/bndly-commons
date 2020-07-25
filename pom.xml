@@ -4,10 +4,14 @@
 
   <groupId>org.bndly.common</groupId>
   <artifactId>org.bndly.common.applications</artifactId>
-  <version>1.0.0</version>
+  <version>${revision}${changelist}</version>
   <packaging>pom</packaging>
 
   <name>Bndly Applications</name>
+
+  <description>A collection of OSGI bundles as maven projects to build a foundation for bndly-features</description>
+
+  <url>https://www.bndly.org</url>
 
   <organization>
     <name>Cybercon GmbH</name>
@@ -21,6 +25,15 @@
       <distribution>repo</distribution>
     </license>
   </licenses>
+
+  <developers>
+    <developer>
+      <name>bndly</name>
+      <email>bndly@cybercon.de</email>
+      <organization>bndly.org</organization>
+      <organizationUrl>https://www.bndly.org</organizationUrl>
+    </developer>
+  </developers>
 
   <modules>
     <module>3rd-party-bom</module>
@@ -64,6 +77,7 @@
     <module>service</module>
     <module>ssl</module>
     <module>templating</module>
+    <module>testfixture</module>
     <module>varnish</module>
   </modules>
 
