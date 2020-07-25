@@ -28,7 +28,7 @@ import org.bndly.common.app.SharedConstants;
  */
 public interface Constants extends SharedConstants {
 	public static final String PACKAGING_JAR = "jar";
-	public static final String PACKAGING_APP = "cybercon-application";
+	public static final String PACKAGING_APP = "bndly-application";
 	public static final String CONTEXT_PROVISIONING_MODEL = PACKAGING_APP + ":provisioning";
 	public static final String TARGET_APP_FOLDER_FOR_MAVEN_BUILD = "app";
 	public static final String TARGET_APP_FOLDER_FOR_MAVEN_START = "app-start";
@@ -41,7 +41,7 @@ public interface Constants extends SharedConstants {
 	public static final String MAVEN_CONTEXT_SYSTEM_PROPERTY_CLEANUP = "org.bndly.common.app.provisioning.mojo.StartMojo.SYSTEM_PROPERTY_CLEANUP";
 	
 	public static final String APP_PROVISIONING_PLUGIN_GROUP_ID = "org.bndly.common";
-	public static final String APP_PROVISIONING_PLUGIN_ARTIFACT_ID = "cyber-maven-plugin";
+	public static final String APP_PROVISIONING_PLUGIN_ARTIFACT_ID = "bndly-maven-plugin";
 	
 	public static final String APP_MAIN_GROUP_ID = "org.bndly.common";
 	public static final String APP_MAIN_ARTIFACT_ID = "org.bndly.common.app-main";
@@ -52,7 +52,7 @@ public interface Constants extends SharedConstants {
 	public static final String DEFAULT_MAIN_CLASS = "org.bndly.common.app.Main";
 	
 	public static final String MANIFEST_VERSION = "Manifest-Version";
-	public static final String MANIFEST_APPLICATION = "Cybercon-Application";
+	public static final String MANIFEST_APPLICATION = "bndly-Application";
 	public static final String MANIFEST_MAIN_CLASS = "Main-Class";
 	public static final String MANIFEST_CLASSPATH = "Class-Path";
 	

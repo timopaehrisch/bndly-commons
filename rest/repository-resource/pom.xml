@@ -141,7 +141,7 @@
         <plugins>
           <plugin>
             <groupId>org.bndly.common</groupId>
-            <artifactId>cyber-maven-plugin</artifactId>
+            <artifactId>bndly-maven-plugin</artifactId>
             <executions>
               <execution>
                 <goals>

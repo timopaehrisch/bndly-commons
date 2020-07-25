@@ -43,7 +43,7 @@
 		<plugins>
 			<plugin>
 				<groupId>org.bndly.common</groupId>
-				<artifactId>cyber-maven-plugin</artifactId>
+				<artifactId>bndly-maven-plugin</artifactId>
 <!--				<version>${TEST.current.project.version}</version>-->
 				<version>${TEST.current.project.properties.this-project-version}</version>
 				<extensions>true</extensions>
