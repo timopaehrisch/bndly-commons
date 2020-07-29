@@ -10,3 +10,4 @@ bin
 .metadata
 .project
 .flattened-pom.xml
+*.bak
