@@ -68,7 +68,7 @@
 		<jsr356.version>1.0</jsr356.version>
 		<jaxb-api.version>2.2.12</jaxb-api.version>
 		<h2.version>1.4.193</h2.version>
-		<mysql.version>5.1.30</mysql.version>
+		<mysql.version>8.0.16</mysql.version>
 		<testng.version>6.10</testng.version>
 	</properties>
 
