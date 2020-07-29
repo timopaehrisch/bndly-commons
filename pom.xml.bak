@@ -9,6 +9,19 @@
 
   <name>Bndly Applications</name>
 
+  <description>A collection of OSGI bundles as maven projects to build a foundation for bndly-features</description>
+
+  <developers>
+    <developer>
+      <name>bndly</name>
+      <organization>bndly.org</organization>
+      <email>bndly@cybercon.de</email>
+      <organizationUrl>https://www.bndly.org</organizationUrl>
+    </developer>
+  </developers>
+
+  <url>https://www.bndly.org</url>
+
   <organization>
     <name>Cybercon GmbH</name>
     <url>http://www.cybercon.de</url>
@@ -24,21 +37,53 @@
 
   <modules>
     <module>3rd-party-bom</module>
-    <module>bom</module>
+    <module>admin-frontend</module>
     <module>antivirus</module>
-    <module>converter</module>
+    <module>app-archetype</module>
+    <module>app-container-common</module>
+    <module>app-main</module>
+    <module>app-provisioning</module>
+    <module>classpath</module>
+    <module>bom</module>
+    <module>cors</module>
+    <module>cors-default-filter</module>
     <module>crypto</module>
+    <module>csv</module>
+    <module>bpm</module>
+    <module>code</module>
+    <module>converter</module>
     <module>data</module>
+    <module>datasource</module>
+    <module>documentation</module>
+    <module>event</module>
     <module>graph</module>
+    <module>html</module>
+    <module>ical</module>
+    <module>ip2location</module>
+    <module>json</module>
     <module>lang</module>
+    <module>mail</module>
+    <module>mapper</module>
     <module>osgi</module>
+    <module>osgi-config</module>
+    <module>osgi-executor-services</module>
+    <module>osgi-jmx</module>
+    <module>pdf</module>
     <module>reflection</module>
     <module>rest</module>
+    <module>runmode</module>
+    <module>schema</module>
+    <module>search</module>
+    <module>service</module>
+    <module>ssl</module>
+    <module>templating</module>
+    <module>testfixture</module>
+    <module>varnish</module>
   </modules>
 
   <scm>
     <connection>scm:git:git@github.com:bndly/bndly-commons.git</connection>
-    <tag>v5.0.0</tag>
+    <tag>v1.0.0</tag>
     <url>https://github.com/bndly/bndly-commons.git</url>
   </scm>
 
@@ -97,6 +142,14 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
+
+  <dependencies>
+    <dependency>
+      <groupId>javax.activation</groupId>
+      <artifactId>activation</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
 
   <build>
 
@@ -449,9 +502,6 @@
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-javadoc-plugin</artifactId>
             <version>2.10.4</version>
-            <configuration>
-              <source>8</source>
-            </configuration>
             <executions>
               <execution>
                 <id>attach-javadocs</id>
@@ -460,6 +510,9 @@
                 </goals>
               </execution>
             </executions>
+            <configuration>
+              <source>8</source>
+            </configuration>
           </plugin>
 
           <!-- To sign the artifacts -->

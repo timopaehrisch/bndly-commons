@@ -13,11 +13,11 @@ under the conditions ~ of the licence contract with cyber:con GmbH. -->
   <parent>
     <groupId>org.bndly.common</groupId>
     <artifactId>org.bndly.common.applications</artifactId>
-    <version>1.0.0</version>
+    <version>${revision}${changelist}</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
-  <artifactId>cyber-maven-plugin</artifactId>
+  <artifactId>bndly-maven-plugin</artifactId>
   <packaging>maven-plugin</packaging>
   <name>Bndly commons App Provisioning</name>
 
