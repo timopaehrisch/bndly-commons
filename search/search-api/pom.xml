@@ -13,7 +13,7 @@ under the conditions ~ of the licence contract with cyber:con GmbH. -->
   <parent>
     <groupId>org.bndly.common.search</groupId>
     <artifactId>org.bndly.common.search.search</artifactId>
-    <version>${revision}${changelist}</version>
+    <version>1.0.1</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
