@@ -266,8 +266,8 @@
             <tagNameFormat>v@{project.version}</tagNameFormat>
             <autoVersionSubmodules>false</autoVersionSubmodules>
             <!--this prevents that the release is being build with a release maven profile (==regular profiles)-->
-            <useReleaseProfile>false</useReleaseProfile>
-            <releaseProfiles>release-javadoc</releaseProfiles>
+            <useReleaseProfile>true</useReleaseProfile>
+            <releaseProfiles>release</releaseProfiles>
           </configuration>
         </plugin>
         <plugin>
