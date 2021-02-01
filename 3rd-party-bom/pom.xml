@@ -13,7 +13,7 @@
 	<scm>
 		<connection>scm:git:git@github.com:bndly/bndly-commons.git</connection>
 		<url>https://github.com/bndly/bndly-commons.git</url>
-		<tag>v5.0.0</tag>
+		<tag>v1.0.1</tag>
 	</scm>
 
 	<organization>
@@ -68,7 +68,7 @@
 		<osgi.service.version>1.4.0</osgi.service.version>
 		<osgi.annotation.bundle.version>1.0.0</osgi.annotation.bundle.version>
 		<velocity.version>1.7</velocity.version>
-		<jetty.version>9.4.34.v20201102</jetty.version>
+		<jetty.version>9.4.35.v20201120</jetty.version>
 		<slf4j.version>1.7.7</slf4j.version>
 		<juel.version>2.2.7</juel.version>
 		<noggit.version>0.5</noggit.version>
