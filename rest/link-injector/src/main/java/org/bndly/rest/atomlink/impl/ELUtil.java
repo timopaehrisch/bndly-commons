@@ -21,6 +21,8 @@ package org.bndly.rest.atomlink.impl;
  */
 
 import de.odysseus.el.util.SimpleResolver;
+import org.bndly.rest.api.Context;
+
 import java.lang.reflect.Method;
 import javax.el.ELContext;
 import javax.el.ExpressionFactory;
@@ -41,6 +43,12 @@ public final class ELUtil {
 		DefaultVariableMapper variableMapper = new DefaultVariableMapper();
 		DefaultELContext context = new DefaultELContext(new SimpleResolver(true), functionMapper, variableMapper);
 		injectExpressionFactory(context, expressionFactory);
+		return context;
+	}
+
+	public static ELContext createELContext(Object objectForThisVariable, Class<?> typeOfThisVariable, ExpressionFactory expressionFactory, Context ctx) {
+		ELContext context = createELContext(objectForThisVariable, typeOfThisVariable, expressionFactory);
+		context.getVariableMapper().setVariable("ctx", expressionFactory.createValueExpression(ctx, Context.class));
 		return context;
 	}
 
@@ -75,8 +83,14 @@ public final class ELUtil {
 
 	public static Boolean evaluateELBoolean(Method m, ELContext context, String expression, ExpressionFactory expressionFactory) {
 		try {
-			Boolean r = (Boolean) expressionFactory.createValueExpression(context, expression, Boolean.class).getValue(context);
-			return r;
+			ClassLoader contextClassLoader = Thread.currentThread().getContextClassLoader();
+			try {
+				Thread.currentThread().setContextClassLoader(context.getClass().getClassLoader());
+				Boolean r = (Boolean) expressionFactory.createValueExpression(context, expression, Boolean.class).getValue(context);
+				return r;
+			} finally {
+				Thread.currentThread().setContextClassLoader(contextClassLoader);
+			}
 		} catch (Exception x) {
 			throw new ServiceDiscoveryException(m, "Failed to evaluate EL expression: " + expression, x);
 		}

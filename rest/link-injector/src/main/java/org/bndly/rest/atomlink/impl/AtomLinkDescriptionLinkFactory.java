@@ -106,7 +106,7 @@ public final class AtomLinkDescriptionLinkFactory implements LinkFactory {
 			List<AtomLinkBean> links = new ArrayList<>();
 			ELContext elContext;
 			if (targetBean != null) {
-				elContext = ELUtil.createELContext(targetBean, targetBean.getClass(), EXPRESSION_FACTORY);
+				elContext = ELUtil.createELContext(targetBean, targetBean.getClass(), EXPRESSION_FACTORY, ctx);
 			} else {
 				elContext = ELUtil.createELContext(EXPRESSION_FACTORY);
 			}

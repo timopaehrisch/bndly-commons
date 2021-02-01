@@ -84,6 +84,12 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
+      <groupId>org.glassfish.web</groupId>
+      <artifactId>el-impl</artifactId>
+      <version>2.2</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
       <groupId>de.odysseus.juel</groupId>
       <artifactId>juel-spi</artifactId>
       <scope>test</scope>
@@ -99,8 +105,10 @@
         <configuration>
           <instructions>
             <Bundle-Category>rest,api,link</Bundle-Category>
-            <Embed-Dependency>el-api;inline=true,
-							juel-impl;inline=true</Embed-Dependency>
+            <Embed-Dependency>el-api,
+							juel-impl,
+                            el-impl</Embed-Dependency>
+            <Export-Package>com.sun.el</Export-Package>
           </instructions>
         </configuration>
       </plugin>
