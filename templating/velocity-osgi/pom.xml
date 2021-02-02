@@ -13,7 +13,7 @@ under the conditions ~ of the licence contract with cyber:con GmbH. -->
   <parent>
     <groupId>org.bndly.common.templating</groupId>
     <artifactId>org.bndly.common.templating.templating</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
@@ -57,7 +57,7 @@ under the conditions ~ of the licence contract with cyber:con GmbH. -->
           <instructions>
             <Bundle-Category>templating</Bundle-Category>
             <Fragment-Host>org.apache.servicemix.bundles.velocity</Fragment-Host>
-            <Import-Package></Import-Package>
+            <Import-Package />
           </instructions>
         </configuration>
       </plugin>
