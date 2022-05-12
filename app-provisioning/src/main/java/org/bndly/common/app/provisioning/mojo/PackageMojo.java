@@ -92,6 +92,9 @@ public class PackageMojo extends AbstractProvisioningMojo {
 			}
 			try {
 				jarArchiver.reset();
+				// skip compression, because spring boot is a diva
+				// otherwise you might be facing "Unable to open nested entry" exceptions
+				jarArchiver.setCompress(false);
 				File tempFileForExpandedData = FileUtils.createTempFile("sbo-zip", ".tmp", artifactFile.getParentFile());
 				tempFileForExpandedData.deleteOnExit();
 
@@ -106,7 +109,7 @@ public class PackageMojo extends AbstractProvisioningMojo {
 
 				// the bundles, configs and all other files
 				Path targetAppFolder = getTargetAppFolder();
-				jarArchiver.addDirectory(targetAppFolder.toFile(), Constants.SBO_INF_PREFIX + File.separator + Constants.APP_JAR_RESOURCES + File.separator);
+				jarArchiver.addDirectory(targetAppFolder.toFile(), Constants.SBO_INF_PREFIX + File.separator);
 
 				// and last but not least, the provisioning file and file info, if it exists
 				Path provisioningFile = Paths.get(project.getBuild().getDirectory()).resolve(Constants.FINAL_PROVISION_FILE_PARENT_FOLDER).resolve(Constants.FINAL_PROVISION_FILE);
