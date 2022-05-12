@@ -456,7 +456,7 @@ public class DeriveDependencyPackagesMojo extends AbstractMojo {
 			}
 			// now we know the desired version. but there might be a further version, that needs to be merged into the generation output.
 			for (ScannedPackage scannedPackage : scannedPackages.packagesForMerge) {
-				existingPackage = existingPackage.withFurtherVersion(scannedPackage.version);
+				existingPackage = existingPackage == null ? scannedPackage : existingPackage.withFurtherVersion(scannedPackage.version);
 			}
 			scannedPackagesList.add(existingPackage);
 		}
