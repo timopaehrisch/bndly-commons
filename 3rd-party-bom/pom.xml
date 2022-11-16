@@ -86,7 +86,7 @@
 		<commons-fileupload.version>1.4</commons-fileupload.version>
 		<commons-lang2.version>2.4</commons-lang2.version>
 		<commons-lang3.version>3.3.2</commons-lang3.version>
-		<jackson.version>2.11.1</jackson.version>
+		<jackson.version>2.12.7.1</jackson.version>
 		<pdfbox.version>2.0.20</pdfbox.version>
 		<javax.servlet2.version>2.5</javax.servlet2.version>
 		<javax.el.version>2.2</javax.el.version>
