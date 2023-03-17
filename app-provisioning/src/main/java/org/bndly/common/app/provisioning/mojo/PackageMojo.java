@@ -101,7 +101,12 @@ public class PackageMojo extends AbstractProvisioningMojo {
 				jarArchiver.setDestFile(tempFileForExpandedData);
 
 				// add original contents
-				jarArchiver.addArchivedFileSet(artifactFile);
+				// create a defensive copy, because the file might be hold open by the archiver, so we will not be able
+				// to replace the file later on.
+				Path copyArtifact = artifactFile.toPath().getParent().resolve(artifactFile.getName() + ".copy");
+				Files.deleteIfExists(copyArtifact);
+				Files.copy(artifactFile.toPath(), copyArtifact);
+				jarArchiver.addArchivedFileSet(copyArtifact.toFile());
 
 				// add java main
 				Path javaMain = getTargetJavaMainFolder();
@@ -131,7 +136,8 @@ public class PackageMojo extends AbstractProvisioningMojo {
 					throw new MojoExecutionException("failed to copy manifest", e);
 				}
 				jarArchiver.createArchive();
-				FileUtils.rename(tempFileForExpandedData, artifactFile);
+				Files.deleteIfExists(artifactFile.toPath());
+				Files.move(tempFileForExpandedData.toPath(), artifactFile.toPath());
 
 			} catch (final IOException ioe) {
 				throw new MojoExecutionException("Unable to create standalone jar", ioe);
