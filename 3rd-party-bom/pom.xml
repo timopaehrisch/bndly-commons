@@ -4,7 +4,7 @@
 
 	<groupId>org.bndly.common</groupId>
 	<artifactId>org.bndly.common.applications-3rd-party-bom</artifactId>
-	<version>1.0.4-SNAPSHOT</version>
+	<version>1.0.4</version>
 	<packaging>pom</packaging>
 	<name>Bndly Application 3rd Party BOM</name>
 
@@ -13,7 +13,7 @@
 	<scm>
 		<connection>scm:git:git@github.com:bndly/bndly-commons.git</connection>
 		<url>https://github.com/bndly/bndly-commons.git</url>
-		<tag>v1.0.1</tag>
+		<tag>v1.0.4</tag>
 	</scm>
 
 	<organization>
