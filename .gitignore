@@ -12,3 +12,4 @@ bin
 .flattened-pom.xml
 pom.xml.bak
 *.bak
+.DS_Store

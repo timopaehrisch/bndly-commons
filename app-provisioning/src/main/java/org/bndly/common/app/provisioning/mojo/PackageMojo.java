@@ -103,7 +103,7 @@ public class PackageMojo extends AbstractProvisioningMojo {
 				// add original contents
 				// create a defensive copy, because the file might be hold open by the archiver, so we will not be able
 				// to replace the file later on.
-				Path copyArtifact = artifactFile.toPath().getParent().resolve(artifactFile.getName() + ".copy");
+				Path copyArtifact = artifactFile.toPath().getParent().resolve(createFileNameOfArtifactCopy(artifactFile));
 				Files.deleteIfExists(copyArtifact);
 				Files.copy(artifactFile.toPath(), copyArtifact);
 				jarArchiver.addArchivedFileSet(copyArtifact.toFile());
@@ -201,6 +201,12 @@ public class PackageMojo extends AbstractProvisioningMojo {
 		} catch (final IOException ioe) {
 			throw new MojoExecutionException("Unable to create standalone jar", ioe);
 		}
+	}
+
+	private String createFileNameOfArtifactCopy(File artifactFile) {
+		String fileName = artifactFile.getName();
+		int i = fileName.lastIndexOf(".");
+		return fileName.substring(0, i) + ".copy" + fileName.substring(i);
 	}
 
 }
