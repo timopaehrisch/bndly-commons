@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.bndly.common.code</groupId>
     <artifactId>org.bndly.common.code.code</artifactId>
-    <version>1.0.5-SNAPSHOT</version>
+    <version>1.0.5</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
